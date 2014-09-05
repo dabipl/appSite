@@ -1,0 +1,260 @@
+section.header{
+    height:550px;
+    margin-top:90px;
+    width:100%;
+    background:#eee;
+    border-bottom:#ddd solid 3px;
+    overflow:hidden;
+}
+
+section.header.faq{
+    height:400px;   
+}
+
+section.header.privacy, section.header.contact{
+    height:300px;   
+}
+
+/*figure.surface{
+    width:50%; 
+    margin-left:5%;
+    float:left;
+    height:550px;
+    background: transparent url(../img/surface.png) no-repeat center center;
+    background-size:100% auto;
+    overflow:hidden;
+    position: absolute;
+    left: 110%;
+    opacity:0;
+    transition: 800ms ease;
+    -webkit-transition: 800ms ease;
+    -moz-transition: 800ms ease;
+    -o-transition: 800ms ease;
+    -ms-transition: 800ms ease;
+}*/
+
+
+
+figure.surface {
+    width: 34%;
+    margin-left: 5%;
+    float: left;
+    height: 295px;
+    background: transparent url(../img/surface.png) no-repeat center center;
+    background-size: 100% auto;
+    overflow: hidden;
+    position: absolute;
+    left: 46%;
+    /* opacity: 0; */
+    transition: 800ms ease;
+    -webkit-transition: 800ms ease;
+    -moz-transition: 800ms ease;
+    -o-transition: 800ms ease;
+    -ms-transition: 800ms ease;
+}
+
+figure.surface.visible{
+    position:relative;
+    opacity:1;
+    left: 0;
+}
+
+.wrapper {max-width:1180px;width:100%;margin:0 auto;position:relative;}
+
+figure.hero{
+    width: 45%;
+    height:450px;
+    margin-top:50px;
+    float:left;
+}
+
+.info-button{    
+    width:213px;
+    height:60px;
+    background: #e3a21a url(../img/info.png) no-repeat center center;
+    background-size:100% auto;
+    cursor:pointer;
+    display:inline-block;
+    margin-right:30px;
+    transition: 800ms ease;
+    -webkit-transition: 800ms ease;
+    -moz-transition: 800ms ease;
+    -o-transition: 800ms ease;
+    -ms-transition: 800ms ease;
+    display:none;
+}
+
+.spstore-button{
+    width:254px;
+    height:60px;
+    background: #0071c6 url(../img/store.png) no-repeat center center;
+    background-size:100% auto;
+    cursor:pointer;
+    display:inline-block;
+    transition: opacity 800ms ease;
+    -webkit-transition: opacity 800ms ease;
+    -moz-transition: opacity 800ms ease;
+    -o-transition: opacity 800ms ease;
+    -ms-transition: opacity 800ms ease;
+    /*opacity:0;*/
+}
+
+.spstore-button.visible{
+    opacity:1;   
+}
+
+.spstore-button:hover{
+    outline: 3px #ccc solid;   
+}
+
+.listview{
+    margin-left: 0 !important;
+    list-style: none !important;  
+    padding: 0 !important;
+    margin: 0px auto !important;
+    display: block !important;
+    
+}
+
+.listview.fluid li {
+    float: left !important;
+    margin-right: 10px !important;
+}
+
+.listview li {
+    margin-bottom: 10px !important;
+    border: 4px transparent solid !important;
+    padding: 10px !important;
+    width: 285px !important;
+    position: relative !important;
+    display: block !important;
+    cursor: default !important;
+    min-height: 105px !important;
+    /*opacity: 0 !important;*/
+    transition: opacity 400ms ease !important;
+    -webkit-transition: opacity 400ms ease !important;
+    -moz-transition: opacity 400ms ease !important;
+    -o-transition: opacity 400ms ease !important;
+    -ms-transition: opacity 400ms ease !important;
+}
+
+.listview li:hover {
+    outline: 3px #ccc solid !important;
+}
+
+.listview li.visible{
+    opacity:1 !important;   
+}
+
+ul li, ol li {
+    display: list-item !important;
+    font-size: 14px !important;
+    line-height: 20px !important;
+}
+
+.listview li .icon {
+    width: 48px !important;
+    height: 48px !important;
+    font-size: 40px !important;
+    float: left !important;
+}
+
+.listview li .icon img {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.listview li .icon {
+    font-size: 40px !important;
+}
+
+.listview li .data {
+    margin-left: 55px !important;
+}
+
+
+.listview li .data h4 {
+    margin: 0 !important;
+    padding: 0 0 2px 0 !important;
+}
+
+.listview li div.badge.bottom {
+    top: auto !important;
+    bottom: -4px !important;
+}
+
+.listview li div.badge.right {
+    right: -4px !important;
+    left: auto !important;
+}
+
+.listview li div.badge {
+    position: absolute !important;
+    padding: 4px 7px !important;
+    margin: 0 !important !important;
+    text-align: center !important;
+    display: block !important;
+    font-size: 9pt !important;
+    color: #ffffff !important;
+}
+
+h4 {
+    font-family: 'Segoe UI Semibold', 'Source Sans Pro', Verdana, Arial, Helvetica, sans-serif !important;
+    font-weight: 600 !important;
+    font-size: 11pt !important;
+    letter-spacing: 0.01em !important;
+    line-height: 13pt !important;
+    font-smooth: always !important;
+    color: #000000 !important;
+    color: rgba(0, 0, 0, 0.6) !important;
+}
+
+.listview li .data p {
+    margin: 0 !important;
+    font-size: 9pt !important;
+}
+
+section.call-to-action{
+    width:100%;
+    border-bottom:#ddd solid 2px;
+}
+
+section.call-to-action h3{
+    font-size:28px;
+    line-height:40px;
+    font-weight:200;
+    color:#fff;
+    margin: 0px;
+    text-align:left;
+    width:100%;
+    padding:80px 0px 30px 0px;
+}
+
+section.call-to-action h3 .button{
+    color:#fff;
+    font-size:30px;
+    display:inline-block;
+    padding:10px 20px;
+    cursor:pointer;
+    text-decoration:none;
+}
+
+section.call-to-action h3 .button:hover{
+    outline: 3px #ccc solid;   
+}
+
+section.call-to-action h4{
+    font-size:18px;
+    line-height:20px;
+    font-weight:200;
+    color:#fff;
+    margin: 0px;
+    text-align:left;
+    width:100%;
+    padding:0px 0px 60px 0px;    
+    font-family: 'Segoe UI Light', 'Source Sans Pro', Verdana, Arial, Helvetica, sans-serif;
+}
+
+section.call-to-action h4 a{
+    color:#fff;   
+}
