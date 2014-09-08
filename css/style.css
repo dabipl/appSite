@@ -8,15 +8,15 @@ section.header{
 }
 
 section.header.faq{
-    height:400px;   
+    height:400px;
 }
 
 section.header.privacy, section.header.contact{
-    height:300px;   
+    height:300px;
 }
 
 /*figure.surface{
-    width:50%; 
+    width:50%;
     margin-left:5%;
     float:left;
     height:550px;
@@ -68,7 +68,7 @@ figure.hero{
     float:left;
 }
 
-.info-button{    
+.info-button{
     width:213px;
     height:60px;
     background: #e3a21a url(../img/info.png) no-repeat center center;
@@ -100,20 +100,20 @@ figure.hero{
 }
 
 .spstore-button.visible{
-    opacity:1;   
+    opacity:1;
 }
 
 .spstore-button:hover{
-    outline: 3px #ccc solid;   
+    outline: 3px #ccc solid;
 }
 
 .listview{
     margin-left: 0 !important;
-    list-style: none !important;  
+    list-style: none !important;
     padding: 0 !important;
     margin: 0px auto !important;
     display: block !important;
-    
+
 }
 
 .listview.fluid li {
@@ -143,7 +143,7 @@ figure.hero{
 }
 
 .listview li.visible{
-    opacity:1 !important;   
+    opacity:1 !important;
 }
 
 ul li, ol li {
@@ -172,10 +172,10 @@ ul li, ol li {
     margin-left: 55px !important;
 }
 
-
 .listview li .data h4 {
-    margin: 0 !important;
-    padding: 0 0 2px 0 !important;
+    margin: 0px !important;
+    padding: 0px 0px 2px !important;
+    font-size: 13px !important;
 }
 
 .listview li div.badge.bottom {
@@ -240,7 +240,7 @@ section.call-to-action h3 .button{
 }
 
 section.call-to-action h3 .button:hover{
-    outline: 3px #ccc solid;   
+    outline: 3px #ccc solid;
 }
 
 section.call-to-action h4{
@@ -252,12 +252,12 @@ section.call-to-action h4{
     margin: 0px;
     text-align:left;
     width:100%;
-    padding:0px 0px 60px 0px;    
+    padding:0px 0px 60px 0px;
     font-family: 'Segoe UI Light', 'Source Sans Pro', Verdana, Arial, Helvetica, sans-serif;
 }
 
 section.call-to-action h4 a{
-    color:#fff;   
+    color:#fff;
 }
 
 .notices2{
@@ -291,11 +291,11 @@ section.call-to-action h4 a{
 }
 
 .notices2 > div.visible{
-    opacity:1;   
+    opacity:1;
 }
 
 .notices2 > div:hover{
-    outline:solid 3px #ccc;   
+    outline:solid 3px #ccc;
 }
 
 .notices2 > div .notice-image2{
@@ -316,4 +316,76 @@ section.call-to-action h4 a{
     font-smooth: always;
     margin-top: 11px;
     margin-left: 10px;
+}
+
+.sign-up-form{
+    width:100%;
+    margin:30px 0px 80px 0px;
+    text-align: center;
+}
+
+.sign-up-form .button{
+    font-size: 20px;
+    padding: 9px 15px 11px 15px;
+    /*margin-left: 10px;*/
+    width: 100%;
+    cursor:pointer;
+    transition: opacity 400ms ease;
+    user-select:none;
+    -webkit-user-select:none;
+    -o-user-select:none;
+    -ms-user-select:none;
+
+    -webkit-transition: opacity 400ms ease;
+    -moz-transition: opacity 400ms ease;
+    -o-transition: opacity 400ms ease;
+    -ms-transition: opacity 400ms ease;
+}
+
+.sign-up-form  .button:hover {
+    outline: 3px #ccc solid;
+}
+
+.sign-up-form .button i {
+    font-size: 30px;
+    vertical-align: middle;
+    margin-left: 15px;
+    padding-bottom: 5px;
+}
+
+.link{
+    color:#333;
+}
+
+.sign-up-form.saving{
+    opacity:0.6;
+    cursor:default;
+}
+
+.sign-up-form h3{
+    font-size: 25px !important;
+    padding: 14px 0px 12px 0px !important;
+    min-height: 42px !important;
+    font-weight: 200;
+}
+
+.sign-up-form .info, .contact-form info{
+    font-size:14px;
+    text-align:center;
+    display:block;
+    margin:10px 0px 0px 0px;
+    opacity:0;
+   -webkit-transition: opacity 400ms ease;
+    -moz-transition: opacity 400ms ease;
+    -o-transition: opacity 400ms ease;
+    -ms-transition: opacity 400ms ease;
+}
+
+.sign-up-form .info.visible{
+    opacity:1;
+}
+
+
+.small-logo{
+    width:100px;
 }
