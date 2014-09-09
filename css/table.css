@@ -1,0 +1,85 @@
+/*
+Generic Styling, for Desktops/Laptops
+*/
+table {
+  width: 100% !important;
+  border-collapse: collapse !important;
+}
+/* Zebra striping */
+tr:nth-of-type(odd) {
+  background: #eee !important;
+}
+th {
+  background: #333333 !important;
+  color: white !important;
+  font-weight: bold !important;
+}
+
+th>p {
+  color: white !important;
+  font-weight: bold !important;
+}
+
+td, th {
+  padding: 6px !important;
+  /*/*border: 1px solid #ccc !important;*/ */
+  text-align: left !important;
+}
+
+td>p{
+  text-align:center;
+}
+
+.bordered{
+  border: 1px solid #333333 !important;
+}
+
+@media
+only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+
+	/* Force table to not be like tables anymore */
+	table, thead, tbody, th, td, tr {
+		display: block !important;
+	}
+
+	/* Hide table headers (but not display: none !important;, for accessibility) */
+	thead tr {
+		position: absolute !important;
+		top: -9999px !important;
+		left: -9999px !important;
+	}
+
+tr { /*border: 1px solid #ccc !important;*/ }
+
+	td {
+		/* Behave  like a "row" */
+		border: none !important;
+		border-bottom: 1px solid #eee !important;
+		position: relative !important;
+		padding-left: 50% !important;
+	}
+
+  td>p{
+    text-align:center;
+  }
+
+	td:before {
+		/* Now like a table header */
+		position: absolute !important;
+		/* Top/left values mimic padding */
+		top: 6px !important;
+		left: 6px !important;
+		width: 45% !important;
+		padding-right: 10px !important;
+		white-space: nowrap !important;
+	}
+
+	/*
+	Label the data
+	*/
+	td:nth-of-type(1):before { content: "Feature" !important; }
+	td:nth-of-type(2):before { content: "TimeOFF Pro" !important; }
+	td:nth-of-type(3):before { content: "TimeOFF Pro Plus" !important; }
+	td:nth-of-type(4):before { content: "TimeOFF Enterprise" !important; }
+}

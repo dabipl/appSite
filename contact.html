@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta charset="utf-8">
+        <title>TimeOFF - The Employees' Leave Requests App for SharePoint</title>
+        <!--<meta name="title" content="TimeOFF - The Employees' Leave Requests App for SharePoint">
+        <meta name="description" content="TimeOff for SharePoint Server 2013 is an application designed for Human Resources departments, streamlining the process of submitting and processing employees' leave requests. The application enables employees to submit leave requests with ease, while allowing authorized staff to accept or reject such requests.">
+        <meta name="tags" content="Design, Web, Graphic design, webdesign, Illustration, advertising, Creative, Studio, Agency, Firm, web development, Mobile development, responsive websites">
+        <meta name="keywords" content="Design, Web, Graphic design, webdesign, Illustration, advertising, Creative, Studio, Agency, Firm, web development, Mobile development, responsive websites">
+
+		<meta property="og:type" content="website">
+        <meta property="og:title" content="TimeOFF - The Employees' Leave Requests App for SharePoint">
+        <meta property="og:url" content="http://www.timeoff.fild.net">
+        <meta property="og:image2" content="http://www.timeoff.fild.net/image2.png">
+        <meta property="og:description" content="TimeOff for SharePoint Server 2013 is an application designed for Human Resources departments, streamlining the process of submitting and processing employees' leave requests. The application enables employees to submit leave requests with ease, while allowing authorized staff to accept or reject such requests.">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-fullscreen" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">-->
+
+        <!--<link rel="shortcut icon" href="http://www.timeoff.fild.net/favicon.ico" type="image2/ico">
+        <link rel="icon" href="http://www.timeoff.fild.net/favicon.png" type="image2s/png">
+        <link rel="apple-touch-icon" href="http://www.timeoff.fild.net/fav64.png" type="image2/png">
+        <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="normalize.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="author" href="http://www.timeoff.fild.net/humans.txt">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script src="js/waypoints.min.js"></script>
+        <script src="js/scrollTo.js"></script>
+        <script src="js/script.js"></script>
+        <script src="js/carousel.js"></script>-->
+        <link href="css/iconFont.css" rel="stylesheet">
+		<link rel="stylesheet" href="css/metro-bootstrap.css">
+        <link rel="stylesheet" href="css/metro-bootstrap-responsive.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/table.css">
+        <script src="js/jquery.min.js"></script>
+        <script src="js/jquery.widget.min.js"></script>
+        <script src="js/metro.min.js"></script>
+    </head>
+    <body class="metro" style="background-color: rgb(238, 30, 105);">
+        <div>
+        <section>
+            <div class="navigation-bar dark fixed-top">
+               <div class="navigation-bar-content container">
+                   <a href="/" class="element">
+                      <img src="img/logo-white.svg" class="small-logo">
+                   </a>
+                   <span class="element-divider"></span>
+
+                   <a class="element1 pull-menu" href="#"></a>
+                   <ul class="element-menu" style="display: block;">
+                       <li>
+                           <a class="without-icon" href="#">About</a>
+                       </li>
+                       <li>
+                           <a class="without-icon" href="#">Features</a>
+                       </li>
+                       <li>
+                           <a href="#" class="without-icon">Compare</a>
+                       </li>
+                       <li>
+                           <a href="#" class="without-icon">FAQ</a>
+                       </li>
+                       <li>
+                           <a href="#" class="without-icon">Contact</a>
+                       </li>
+                   </ul>
+               </div>
+           </div>
+        </section>
+        <section>
+          <div style="background: url(img/bgr21.png) top left no-repeat; background-size: cover; height: auto;">
+              <div class="container" style="padding: 50px 20px">
+                  <div class="grid">
+                      <div class="row">
+                          <div class="span12">
+                              <div class="row">
+                                       <div class="span12" >
+                                          <h1 class="fg-white" style="padding:5px; background-color: rgba(0, 0, 0, 0.42);">Get help, suggest a new feature or just say hi :)</h1>
+                                       </div>
+                                  </div>
+                          </div>
+                      </div>
+                  </div>
+               </div>
+          </div>
+        </section>
+        <section>
+            <div style="height: auto;background-color: white;">
+                <div class="container" style="padding: 50px 20px">
+                    <div class="grid">
+                        <div class="row">
+                            <div class="span12">
+                                <h3 class="left">Use the form below to send us your thoughts</h3>
+                                <p>If you've found an issue or a bug in the TimeOFF app please describe it as detailed as you can, so we could help you in the best way. We also very appreciate every opinion and feature idea which can improve the TimeOFF.</p>
+                                <br>
+                                <div class="row">
+                                    <div class="span6">
+                                      <span class="query-message fg-white bg-orange"></span>
+                                      <form action="/api/upload.php" method="post" id="contact-form" enctype="multipart/form-data">
+                                          <div class="row">
+                                              <div class="span6">
+                                                <div class="input-control text" data-role="input-control">
+                                                  <input type="text" id="name" name="name" placeholder="Please give us your name"/>
+                                                </div>
+                                              </div>
+                                           </div>
+                                           <div class="row">
+                                               <div class="span6">
+                                                 <div class="input-control text" data-role="input-control">
+                                                   <input type="text" id="email" name="email" placeholder="And email, so we could reply"/>
+                                                 </div>
+                                               </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="span6">
+                                                  <div class="input-control text" data-role="input-control">
+                                                    <input type="text" id="subject" name="subject" placeholder="Then enter a message subject"/>
+                                                  </div>
+                                                </div>
+                                             </div>
+                                             <div class="row">
+                                                 <div class="span6">
+                                                   <div class="input-control select" data-role="input-control">
+                                                     <select id="type" name="type">
+                                                          <option value="Message">Message</option>
+                                                          <option value="Bug/Issue">Bug/Issue</option>
+                                                          <option value="Feature idea">Feature idea</option>
+                                                      </select>
+                                                    </div>
+                                                 </div>
+                                              </div>
+                                              <div class="row">
+                                                  <div class="span6">
+                                                    <div class="input-control textarea">
+                                                       <textarea id="message" name="message" rows="5" placeholder="Write your message here"></textarea>
+                                                     </div>
+                                                  </div>
+                                               </div>
+                                        </form>
+                                        <div class="button-set">
+                                            <a id="form-submit" class="button large bg-emerald fg-white">Submit! <i class="icon-arrow-right-3"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="span6">
+                                      <img src="img/fildnet-logo.jpg" />
+                                      <br />
+                                      <h3 class="left"><b>Fild.NET</b> is an <b>experienced developer</b> of applications extending the standard functionality of <b>SharePoint</b>.</h3>
+                                      <p style="font-size: 16px; line-height: 24px;">
+              						We also specialize in other advanced Microsoft solutions, such as: <b>BizTalk</b>, <b>SQL Server</b> and <b>Business Intelligence</b>, products from the <b>Cloud (Windows Azure and Office 365)</b>, Dynamics CRM. Contact us if you need customized applications for your SharePoint 2010 and SharePoint 2013 environment, experienced BizTalk developers for your BizTalk related projects, Business Intelligence or Cloud solutions based on Microsoft products. Our expertise is confirmed by relevant Microsoft certificates and by our cooperation with the most demanding clients throughout the world. We provide our services in a <b>cost-effective nearshoring model</b> that will enable you to <b><a href="http://fild.net/en/reduce-your-sharepoint-development-costs-by-half/">reduce your IT development and support costs by half</a></b>.
+              						            </p>
+                                      <div class="button-set">
+                                          <a href="http://fild.net/en/reduce-your-sharepoint-development-costs-by-half/" class="button large bg-blue fg-white">Go to the Fild.NET website <i class="icon-arrow-right-3"></i></a>
+                                      </div>
+                                    </div>
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+                 </div>
+            </div>
+            </section>
+            <section class="call-to-action">
+              <div style="background: url(img/bgr23.png) top left no-repeat; background-size: cover; height: auto;">
+                  <div class="container" style="padding: 50px 20px">
+                      <div class="grid">
+                          <div class="row">
+                              <div class="span12" style="background-color: rgba(0, 0, 0, 0.42); padding:5px;">
+                                  <h3 style="padding-top: 50px"><a href="http://office.microsoft.com/en-us/store/timeoff-pro-WA104079126.aspx" class="button bg-emerald">Get the 30-day free trial</a> and start to manage leave requests with ease!</h3>
+                                  <h4 style="height:50px" class="fg-white">You can also check our TimeOFF lite for smaller companies with limited features <a class="button bg-emerald fg-white" href="http://office.microsoft.com/en-us/store/timeoff-lite-WA104022371.aspx">here</a></h4>
+                                  <h4 style="height:50px" class="fg-white">If you don't have test site to checkout this app then sign up for a <a class="button bg-orange fg-white" href="http://office.microsoft.com/en-us/business/office-365-enterprise-e3-business-software-FX103030346.aspx">30-day free Office 365 trial</a> with 25 users seats!</h4>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+            </section>
+            <section>
+                    <div style="height: auto;">
+                        <div class="container" style="padding: 50px 20px">
+                            <div class="grid">
+                                <div class="row">
+                                    <div class="span12">
+                                      <h2 class="fg-white no-margin" style="text-align: center;">Want to know when the new features will be available?</h2>
+                                      <p class="fg-white with-bottom" style="text-align: center;">Sign up below for updates!</p>
+                                      <div class="sign-up-form">
+                                        <div class="row">
+                                          <div class="span12">
+                                            <div class="input-control text" data-role="input-control">
+                                              <input type="email" placeholder="your@email.com" required/>
+                                            </div>
+                                          </div>
+                                          <div class="row">
+                                            <div class="span6">
+                                                <a class="button bg-blue fg-white">Subscribe <i class="icon-arrow-right-3"></i></a>
+                                            </div>
+                                            <div class="span6">
+                                                <a id="unsubscribe" class="button bg-orange fg-white">Unsubscribe <i class="icon-arrow-right-3"></i></a>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+            </section>
+            <section>
+              <div class="fg-white dark" style="height: auto; background-color: rgb(51, 51, 51);">
+              <div class="container" style="padding: 10px;">
+                 <div class="grid">
+                    <div class="row">
+                       <div class="span12">
+                          <div class="row">
+                             <div class="span4">
+                                <img src="img/logo-white.svg" class="small-logo"> is brought to you by <a class="button small bg-yellow fg-white" href="http://fild.net">Fild.NET</a>
+                             </div>
+                             <div style="text-align: right;" class="span8">
+                                If you have any questions <a class="button small bg-green fg-white" href="/faq" style="width: 125px;">Check the FAQ</a> or <a class="button small bg-green last fg-white" href="/contact">Contact us</a>
+                             </div>
+                          </div>
+                       </div>
+                    </div>
+                    <div class="row">
+                       <div class="span12">
+                          <div class="row">
+                             <div class="span4">
+                                <a class="button bg-blue fg-white" href="http://office.microsoft.com/en-us/store/dashboard.aspx?AssetId=PN104022361" style="">Check our other apps for SharePoint <i class="icon-arrow-right-3"></i></a>
+                             </div>
+                             <div style="text-align: right;" class="span8">
+                                <a class="button bg-blue fg-white" href="/privacy">Privacy Policy</a>
+                             </div>
+                          </div>
+                       </div>
+                    </div>
+                 </div>
+              </div>
+              </div>
+            </section>
+      </div>
+	</body>
+	</html>

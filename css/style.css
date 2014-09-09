@@ -232,7 +232,7 @@ section.call-to-action h3{
 
 section.call-to-action h3 .button{
     color:#fff;
-    font-size:30px;
+    font-size:2rem;
     display:inline-block;
     padding:10px 20px;
     cursor:pointer;
@@ -387,5 +387,9 @@ section.call-to-action h4 a{
 
 
 .small-logo{
-    width:100px;
+    width:80px;
 }
+
+.metro h1{
+  font-size: 3rem !important;
+  }
