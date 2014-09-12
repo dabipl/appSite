@@ -37,8 +37,11 @@
         <script src="js/jquery.min.js"></script>
         <script src="js/jquery.widget.min.js"></script>
         <script src="js/metro.min.js"></script>
+        <script src="angular/angular.min.js"></script>
+        <script src="angular/angular-route.js"></script>
+        <script src="angular/angular-animate.min.js"></script>
     </head>
-    <body class="metro" style="background-color: rgb(238, 30, 105);">
+    <body class="metro" style="background-color: rgb(238, 30, 105);" ng-app="">
         <div>
         <section>
             <div class="navigation-bar dark fixed-top">
@@ -86,6 +89,12 @@
                                       <div class="span6" >
                                           <img src="img/surface.png"></img>
                                       </div>
+                                      <p>
+                                        <input type="button" value="set" ng-click="myCssVar='page-home'">
+                                        <input type="button" value="clear" ng-click="myCssVar=''">
+                                        <br>
+                                        <span ng-class="myCssVar">CSS-Animated Text</span>
+                                      </p>
                                   </div>
                           </div>
                       </div>
@@ -118,7 +127,7 @@
                             <div class="span12">
                                 <div class="row">
                                     <div class="span6" >
-                                            <img src="img/surface.png"></img>
+                                            <img src="img/surface.png" class="slide-animation"></img>
                                     </div>
                                      <div class="span6" >
                                         <h1 class="fg-white" style="">Get rid of paper work</h1>
