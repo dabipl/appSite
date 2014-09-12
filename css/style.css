@@ -393,3 +393,7 @@ section.call-to-action h4 a{
 .metro h1{
   font-size: 3rem !important;
   }
+
+  .panel-header{
+    font-size: 1.5rem !important;
+  }
