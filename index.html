@@ -37,11 +37,8 @@
         <script src="js/jquery.min.js"></script>
         <script src="js/jquery.widget.min.js"></script>
         <script src="js/metro.min.js"></script>
-        <script src="angular/angular.min.js"></script>
-        <script src="angular/angular-route.js"></script>
-        <script src="angular/angular-animate.min.js"></script>
     </head>
-    <body class="metro" style="background-color: rgb(238, 30, 105);" ng-app="">
+    <body class="metro" style="background-color: rgb(238, 30, 105);" ng-app="ngAppSite">
         <div>
         <section>
             <div class="navigation-bar dark fixed-top">
@@ -89,12 +86,30 @@
                                       <div class="span6" >
                                           <img src="img/surface.png"></img>
                                       </div>
-                                      <p>
-                                        <input type="button" value="set" ng-click="myCssVar='page-home'">
-                                        <input type="button" value="clear" ng-click="myCssVar=''">
-                                        <br>
-                                        <span ng-class="myCssVar">CSS-Animated Text</span>
-                                      </p>
+                                      <div ng-controller="GoodController1">
+                                        <p ng-class="class" ng-show="show">BLA BLA BLA1</p>
+                                        <div ng-class="class" ng-show="!show">BLA BLA BLA2</div>
+                                        <div ng-class="class">
+                                            I can add: {{a}} + {{b}} =  {{ a+b }}
+
+                                            <p>This renders because the controller does not fail to
+                                               instantiate, by using explicit annotation style (see
+                                               script.js for details)
+                                            </p>
+                                            <button  ng-click="showFun()">Show</button >
+                                            <button  ng-click="hideFun()">Hide</button >
+                                            <img ng-class="class" src="img/surface.png"></img>
+                                        </div>
+                                        <input type="search" ng-model="q" placeholder="filter friends..." />
+                                        <input type="search" ng-model="new" placeholder="filter friends..." />
+                                        <ul class="example-animate-container">
+                                          <li class="animate-repeat" ng-repeat="element in elements  | filter:q">[{{$index+1}}] {{element}}</li>
+                                           <li class="animate-repeat" ng-if="elements.length == 0">
+                                              <strong>No results found...</strong>
+                                            </li>
+                                        </ul>
+                                        <button  href="" ng-click="add()">add</button >
+                                      </div>
                                   </div>
                           </div>
                       </div>
@@ -584,5 +599,9 @@
            </div>
         </section>
       </div>
+      <script src="angular/angular.min.js"></script>
+      <script src="angular/angular-animate.min.js"></script>
+      <script src="angular/angular-route.js"></script>
+      <script src="js/ng-script.js"></script>
 	</body>
 	</html>
