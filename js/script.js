@@ -4,7 +4,7 @@ var clickedMail = false;
 
 $(document).ready(function(){
     function supportsSVG() {
-		return !! document.createElementNS && !! document.createElementNS('http://www.w3.org/2000/svg','svg').createSVGRect;	
+		return !! document.createElementNS && !! document.createElementNS('http://www.w3.org/2000/svg','svg').createSVGRect;
 	}
 	if (supportsSVG()) {
 		document.documentElement.className += ' svg';
@@ -18,13 +18,13 @@ $(document).ready(function(){
 			}
 		}
 	}
-    
+
     var testPlaceholder = document.createElement('input');
-    
+
 	if('placeholder' in testPlaceholder){
         supportPlaceholder = true;
     }
-    
+
     if(!supportPlaceholder){
         $('[placeholder]').focus(function() {
           var input = $(this);
@@ -48,17 +48,17 @@ $(document).ready(function(){
             $('.query-message').css('display', 'block');
         }
         else if(queryMessage == "invalidfile"){
-            $('.query-message').text("There was an error with the attachement. Simply try again."); 
+            $('.query-message').text("There was an error with the attachement. Simply try again.");
             $('.query-message').css('display', 'block');
         }
         else if(queryMessage == "invalidfileformat"){
-            $('.query-message').text("Sorry, but only images are allowed as an attachement.");  
+            $('.query-message').text("Sorry, but only images are allowed as an attachement.");
             $('.query-message').css('display', 'block');
         }
-        
-        
+
+
     }
-    
+
     $('#surface').addClass('visible');
     $('#question').addClass('visible');
     $('#protect').addClass('visible');
@@ -67,23 +67,27 @@ $(document).ready(function(){
     setTimeout(function(){
         $('#spstore-button').addClass('visible');
     },200);
-    
+
     $('.about-screen-1').waypoint({
         offset: offset,
         triggerOnce: true,
         handler: function(direction) {
-            $('.about-screen-1').addClass('visible');
+          setTimeout(function(){
+              $('.about-screen-1').addClass('visible');
+            },200);
         }
     });
-    
+
     $('.about-screen-2').waypoint({
         offset: offset,
         triggerOnce: true,
         handler: function(direction) {
+          setTimeout(function(){
             $('.about-screen-2').addClass('visible');
+          },200);
         }
     });
-    
+
     $('.about-screen-3').waypoint({
         offset: offset,
         triggerOnce: true,
@@ -91,7 +95,7 @@ $(document).ready(function(){
             $('.about-screen-3').addClass('visible');
         }
     });
-    
+
     $('.about-screen-5').waypoint({
         offset: offset,
         triggerOnce: true,
@@ -99,7 +103,7 @@ $(document).ready(function(){
             $('.about-screen-5').addClass('visible');
         }
     });
-    
+
     $('.features').waypoint({
         offset: offset,
         triggerOnce: true,
@@ -114,7 +118,7 @@ $(document).ready(function(){
             });
         }
     });
-    
+
     $('.future-features').waypoint({
         offset: offset,
         triggerOnce: true,
@@ -129,36 +133,36 @@ $(document).ready(function(){
             });
         }
     });
-        
+
     $('#about').on('click',function(){
         $(window).scrollTo( $('#section-about'), 200, { offset: -70 } );
-        
+
     });
-    
+
     $('#features').on('click',function(){
         $(window).scrollTo( $('#section-features'), 200, { offset: -70 } );
     });
-    
+
     $('#practicies').on('click',function(){
         $(window).scrollTo( $('#section-practicies'), 200, { offset: -70 } );
     });
-    
+
     $('.sign-up-form a').on('click',function(){
         saveEmail();
     });
-    
+
     $('#unsubscribe').on('click',function(){
         remEmail();
     });
-    
+
     $('#image-button').on('click',function(){
         $('#attachement').click();
     });
-    
+
     $("#attachement").change(function() {
         $('#image-button').html('File attached! Click to change. <i class="icon-upload-3 fg-color-white"></i>');
     });
-    
+
     $('#form-submit').on('click',function(){
 
         if(!supportPlaceholder){
@@ -179,13 +183,13 @@ $(document).ready(function(){
         var email = $('#email').val();
         var subject = $('#subject').val();
         var message = $('#message').val();
-        
+
         $('.info').removeClass('visible');
         $('#name').removeClass('invalid');
         $('#email').removeClass('invalid');
         $('#subject').removeClass('invalid');
         $('#message').removeClass('invalid');
-        
+
         if(name && email && subject && message && validateEmail(email)){
 			if(!clickedMail){
 				$('#contact-form').submit();
@@ -225,15 +229,15 @@ $(document).ready(function(){
                     $('#message').val($('#message').attr('placeholder'));
                 }
             }
-                
+
             $('#contact-form-error').text(errormessage);
             $('#contact-form-error').addClass('visible');
         }
-        
+
     });
-    
-    
-    
+
+
+
     var docElem = document.documentElement,
         header = $('header');
 		didScroll = false,
@@ -262,7 +266,7 @@ $(document).ready(function(){
 	function scrollY() {
 		return window.pageYOffset || docElem.scrollTop;
 	}
-    
+
     function initFaq(){
         var i = 0;
         $('#faq .notices > div').each(function(){
@@ -272,7 +276,7 @@ $(document).ready(function(){
                 el.addClass('visible');
             }, i * 100);
         });
-        
+
         $('#faq .notices > div').each(function(){
             var el = $(this);
             el.click(function(){
@@ -291,11 +295,11 @@ $(document).ready(function(){
     }
 
     initFaq();
-    
+
 	init();
-	
+
 	showAnswerByID();
-	
+
 });
 
 function saveEmail(){
@@ -308,16 +312,16 @@ function saveEmail(){
         }
     }
     var email = $('.sign-up-form input').val();
-    
+
     if(email != null && email != '' && validateEmail(email) && !emptyWithPlaceholder){
         $('.sign-up-form .info').removeClass('visible');
-        $('.sign-up-form').addClass('saving');        
+        $('.sign-up-form').addClass('saving');
         $.get("/api", { email: email }).done(function(data) {
-              
+
             //good
             if(data == "1"){
                 $('.sign-up-form').html('<h3>Thank you! Your email address has been saved.</h3>');
-                $('.sign-up-form').removeClass('saving'); 
+                $('.sign-up-form').removeClass('saving');
             }
             //already exists
             else if(data == "0"){
@@ -353,16 +357,16 @@ function remEmail(){
         }
     }
     var email = $('.sign-up-form input').val();
-    
+
     if(email != null && email != '' && validateEmail(email) && !emptyWithPlaceholder){
         $('.sign-up-form .info').removeClass('visible');
-        $('.sign-up-form').addClass('saving');        
+        $('.sign-up-form').addClass('saving');
         $.get("/api/remsubs", { email: email }).done(function(data) {
-              
+
             //good
             if(data == "1"){
                 $('.sign-up-form').html('<h3>Done!</h3>');
-                $('.sign-up-form').removeClass('saving'); 
+                $('.sign-up-form').removeClass('saving');
             }
             //not in db
             else if(data == "0"){
@@ -388,7 +392,7 @@ function remEmail(){
     }
 }
 
-function validateEmail(email) { 
+function validateEmail(email) {
     var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     return re.test(email);
 }

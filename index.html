@@ -37,6 +37,8 @@
         <script src="js/jquery.min.js"></script>
         <script src="js/jquery.widget.min.js"></script>
         <script src="js/metro.min.js"></script>
+        <script src="js/waypoints.min.js"></script>
+        <script src="js/script.js"></script>
     </head>
     <body class="metro" style="background-color: rgb(238, 30, 105);" ng-app="ngAppSite">
         <div>
@@ -83,32 +85,8 @@
                                           </p>
                                            <a href="http://office.microsoft.com/en-us/store/timeoff-pro-WA104079126.aspx" class="spstore-button visible" id="spstore-button"></a>
                                        </div>
-                                      <div class="span6" >
-                                          <img src="img/surface.png"></img>
-                                      </div>
-                                      <div ng-controller="GoodController1">
-                                        <p ng-class="class" ng-show="show">BLA BLA BLA1</p>
-                                        <div ng-class="class" ng-show="!show">BLA BLA BLA2</div>
-                                        <div ng-class="class">
-                                            I can add: {{a}} + {{b}} =  {{ a+b }}
-
-                                            <p>This renders because the controller does not fail to
-                                               instantiate, by using explicit annotation style (see
-                                               script.js for details)
-                                            </p>
-                                            <button  ng-click="showFun()">Show</button >
-                                            <button  ng-click="hideFun()">Hide</button >
-                                            <img ng-class="class" src="img/surface.png"></img>
-                                        </div>
-                                        <input type="search" ng-model="q" placeholder="filter friends..." />
-                                        <input type="search" ng-model="new" placeholder="filter friends..." />
-                                        <ul class="example-animate-container">
-                                          <li class="animate-repeat" ng-repeat="element in elements  | filter:q">[{{$index+1}}] {{element}}</li>
-                                           <li class="animate-repeat" ng-if="elements.length == 0">
-                                              <strong>No results found...</strong>
-                                            </li>
-                                        </ul>
-                                        <button  href="" ng-click="add()">add</button >
+                                      <div class="span6 about-screen-1" >
+                                          <img src="img/empty.png"></img>
                                       </div>
                                   </div>
                           </div>
@@ -141,8 +119,8 @@
                         <div class="row">
                             <div class="span12">
                                 <div class="row">
-                                    <div class="span6" >
-                                            <img src="img/surface.png" class="slide-animation"></img>
+                                    <div class="span6 about-screen-2" >
+                                        <img src="img/empty.png"></img>
                                     </div>
                                      <div class="span6" >
                                         <h1 class="fg-white" style="">Get rid of paper work</h1>

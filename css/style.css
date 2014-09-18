@@ -436,3 +436,48 @@ section.call-to-action h4 a{
   opacity:1;
   max-height:40px;
 }
+
+/*Animations
+=========================================================================*/
+
+.about-screen-1{
+    background: transparent url(../img/surface.png) no-repeat 21618% center;
+    background-size:98% auto;
+    transition: 400ms ease;
+    -webkit-transition: 400ms ease;
+    -moz-transition: 400ms ease;
+    -o-transition: 400ms ease;
+    -ms-transition: 400ms ease;
+}
+
+.about-screen-1.visible{
+    background-position:left center;
+}
+
+.about-screen-2{
+    background: transparent url(../img/surface2.png) no-repeat -21618% center;
+    background-size:98% auto;
+    transition: 400ms ease;
+    -webkit-transition: 400ms ease;
+    -moz-transition: 400ms ease;
+    -o-transition: 400ms ease;
+    -ms-transition: 400ms ease;
+}
+
+.about-screen-2.visible{
+    background-position:left center;
+}
+
+.about-screen-3{
+    background: transparent url(../img/surface3.png) no-repeat 21618% center;
+    background-size:98% auto;
+    transition: 400ms ease;
+    -webkit-transition: 400ms ease;
+    -moz-transition: 400ms ease;
+    -o-transition: 400ms ease;
+    -ms-transition: 400ms ease;
+}
+
+.about-screen-3.visible{
+    background-position:left center;
+}
