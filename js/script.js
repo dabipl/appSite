@@ -74,7 +74,7 @@ $(document).ready(function(){
         handler: function(direction) {
           setTimeout(function(){
               $('.about-screen-1').addClass('visible');
-            },200);
+            },150);
         }
     });
 
@@ -84,7 +84,7 @@ $(document).ready(function(){
         handler: function(direction) {
           setTimeout(function(){
             $('.about-screen-2').addClass('visible');
-          },200);
+          },150);
         }
     });
 
@@ -92,15 +92,19 @@ $(document).ready(function(){
         offset: offset,
         triggerOnce: true,
         handler: function(direction) {
+          setTimeout(function(){
             $('.about-screen-3').addClass('visible');
+          },150);
         }
     });
 
-    $('.about-screen-5').waypoint({
+    $('.about-screen-4').waypoint({
         offset: offset,
         triggerOnce: true,
         handler: function(direction) {
-            $('.about-screen-5').addClass('visible');
+          setTimeout(function(){
+            $('.about-screen-4').addClass('visible');
+          },150);
         }
     });
 
@@ -124,7 +128,7 @@ $(document).ready(function(){
         triggerOnce: true,
         handler: function(direction) {
             var i = 0;
-            $('.notices > div').each(function(){
+            $('.notices2 > div').each(function(){
                 var el = $(this);
                 i++;
                 setTimeout(function(){

@@ -381,6 +381,14 @@ section.call-to-action h4 a{
     -ms-transition: opacity 400ms ease;
 }
 
+.notices2 > div{
+  opacity:0;
+}
+
+li.bg-pinkiDark{
+  opacity:0;
+}
+
 .sign-up-form .info.visible{
     opacity:1;
 }
@@ -398,8 +406,18 @@ section.call-to-action h4 a{
     font-size: 1.5rem !important;
   }
 
+.bg-pinkiDark{
+  background-color: #A10A41!important;
+  }
+
+.bg-fogy {
+  background-color: #90CBD9!important;
+}
 
 
+li.listview{
+  opacity:0;
+}
 /*Animations
 =========================================================================*/
 .example-animate-container {
@@ -455,7 +473,7 @@ section.call-to-action h4 a{
 }
 
 .about-screen-2{
-    background: transparent url(../img/surface2.png) no-repeat -21618% center;
+    background: transparent url(../img/surface2sh.png) no-repeat -21618% center;
     background-size:98% auto;
     transition: 400ms ease;
     -webkit-transition: 400ms ease;
@@ -469,7 +487,7 @@ section.call-to-action h4 a{
 }
 
 .about-screen-3{
-    background: transparent url(../img/surface3.png) no-repeat 21618% center;
+    background: transparent url(../img/surface3sh.png) no-repeat 21618% center;
     background-size:98% auto;
     transition: 400ms ease;
     -webkit-transition: 400ms ease;
@@ -479,5 +497,19 @@ section.call-to-action h4 a{
 }
 
 .about-screen-3.visible{
+    background-position:left center;
+}
+
+.about-screen-4{
+    background: transparent url(../img/surface4.png) no-repeat -21618% center;
+    background-size:98% auto;
+    transition: 400ms ease;
+    -webkit-transition: 400ms ease;
+    -moz-transition: 400ms ease;
+    -o-transition: 400ms ease;
+    -ms-transition: 400ms ease;
+}
+
+.about-screen-4.visible{
     background-position:left center;
 }
