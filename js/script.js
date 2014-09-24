@@ -108,6 +108,16 @@ $(document).ready(function(){
         }
     });
 
+    $('.about-screen-5').waypoint({
+        offset: offset,
+        triggerOnce: true,
+        handler: function(direction) {
+          setTimeout(function(){
+            $('.about-screen-5').addClass('visible');
+          },150);
+        }
+    });
+
     $('.features').waypoint({
         offset: offset,
         triggerOnce: true,

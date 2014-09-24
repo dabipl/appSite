@@ -227,7 +227,7 @@ section.call-to-action h3{
     margin: 0px;
     text-align:left;
     width:100%;
-    padding:80px 0px 30px 0px;
+    /*padding:80px 0px 30px 0px;*/
 }
 
 section.call-to-action h3 .button{
@@ -512,4 +512,38 @@ li.listview{
 
 .about-screen-4.visible{
     background-position:left center;
+}
+
+.about-screen-5{
+    background: transparent url(../img/O365.png) no-repeat 21618% center;
+    background-size:98% auto;
+    transition: 400ms ease;
+    -webkit-transition: 400ms ease;
+    -moz-transition: 400ms ease;
+    -o-transition: 400ms ease;
+    -ms-transition: 400ms ease;
+}
+
+.about-screen-5.visible{
+    background-position:left center;
+}
+
+.bg-blackTrPadd{
+    background-color: rgba(0, 0, 0, 0.42) !important;
+   padding:10px !important;
+   }
+
+.customUnderline{
+  text-decoration:underline;
+  color:white !important;
+}
+
+.customUnderline:hover{
+  text-decoration:none;
+  background-color:#B91D47 !important;
+}
+
+.customUnderline:hover.office{
+  text-decoration:none;
+  background-color:#EB3B00 !important;
 }
