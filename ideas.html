@@ -1,969 +1,976 @@
 <!DOCTYPE html>
 <html lang="en-us">
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <meta charset="utf-8">
-        <title>TimeOFF - The Employees' Leave Requests App for SharePoint</title>
-        <!--<meta name="title" content="TimeOFF - The Employees' Leave Requests App for SharePoint">
-        <meta name="description" content="TimeOff for SharePoint Server 2013 is an application designed for Human Resources departments, streamlining the process of submitting and processing employees' leave requests. The application enables employees to submit leave requests with ease, while allowing authorized staff to accept or reject such requests.">
-        <meta name="tags" content="Design, Web, Graphic design, webdesign, Illustration, advertising, Creative, Studio, Agency, Firm, web development, Mobile development, responsive websites">
-        <meta name="keywords" content="Design, Web, Graphic design, webdesign, Illustration, advertising, Creative, Studio, Agency, Firm, web development, Mobile development, responsive websites">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta charset="utf-8">
+      <title>TimeOFF - The Employees' Leave Requests App for SharePoint</title>
+      <!--<meta name="title" content="TimeOFF - The Employees' Leave Requests App for SharePoint">
+         <meta name="description" content="TimeOff for SharePoint Server 2013 is an application designed for Human Resources departments, streamlining the process of submitting and processing employees' leave requests. The application enables employees to submit leave requests with ease, while allowing authorized staff to accept or reject such requests.">
+         <meta name="tags" content="Design, Web, Graphic design, webdesign, Illustration, advertising, Creative, Studio, Agency, Firm, web development, Mobile development, responsive websites">
+         <meta name="keywords" content="Design, Web, Graphic design, webdesign, Illustration, advertising, Creative, Studio, Agency, Firm, web development, Mobile development, responsive websites">
 
-    <meta property="og:type" content="website">
-        <meta property="og:title" content="TimeOFF - The Employees' Leave Requests App for SharePoint">
-        <meta property="og:url" content="http://www.timeoff.fild.net">
-        <meta property="og:image2" content="http://www.timeoff.fild.net/image2.png">
-        <meta property="og:description" content="TimeOff for SharePoint Server 2013 is an application designed for Human Resources departments, streamlining the process of submitting and processing employees' leave requests. The application enables employees to submit leave requests with ease, while allowing authorized staff to accept or reject such requests.">
-        <meta name="apple-mobile-web-app-capable" content="yes">
-        <meta name="apple-mobile-web-app-fullscreen" content="yes">
-        <meta name="apple-mobile-web-app-status-bar-style" content="black">-->
-
-        <!--<link rel="shortcut icon" href="http://www.timeoff.fild.net/favicon.ico" type="image2/ico">
-        <link rel="icon" href="http://www.timeoff.fild.net/favicon.png" type="image2s/png">
-        <link rel="apple-touch-icon" href="http://www.timeoff.fild.net/fav64.png" type="image2/png">
-        <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="normalize.css">
-        <link rel="stylesheet" type="text/css" href="style.css">
-        <link rel="author" href="http://www.timeoff.fild.net/humans.txt">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script src="js/waypoints.min.js"></script>
-        <script src="js/scrollTo.js"></script>
-        <script src="js/script.js"></script>
-        <script src="js/carousel.js"></script>-->
-        <link href="css/iconFont.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/metro-bootstrap.css">
-        <link rel="stylesheet" href="css/metro-bootstrap-responsive.css">
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/table.css">
-        <script src="js/jquery.min.js"></script>
-        <script src="js/jquery.widget.min.js"></script>
-        <script src="js/metro.min.js"></script>
-    </head>
-    <body class="metro" style="background-color: rgb(238, 30, 105);">
-        <div>
-        <section>
-            <div class="navigation-bar dark fixed-top">
-               <div class="navigation-bar-content container">
-                   <a href="/" class="element">
-                      <img src="img/logo-white.svg" class="small-logo">
-                   </a>
-                   <span class="element-divider"></span>
-
-                   <a class="element1 pull-menu" href="#"></a>
-                   <ul class="element-menu place-right" style="display: block;">
-                       <li>
-                           <a class="without-icon" href="/index.html">About</a>
-                       </li>
-                       <li>
-                           <a class="without-icon" href="/index.html">Features</a>
-                       </li>
-                       <li>
-                           <a href="/compare.html" class="without-icon">Compare</a>
-                       </li>
-                       <li>
-                           <a href="/faq.html" class="without-icon">FAQ</a>
-                       </li>
-                       <li>
-                           <a href="/contact.html" class="without-icon">Contact</a>
-                       </li>
-                   </ul>
-               </div>
-           </div>
-        </section>
-        <section>
-          <div style="background: url(img/bgr21.png) top left no-repeat; background-size: cover; height: auto;">
-              <div class="container" style="padding: 50px 20px">
-                  <div class="grid">
-                      <div class="row">
-                          <div class="span12">
-                              <div class="row">
-                                       <div class="span12" >
-                                          <h1 class="fg-white" style="padding:5px; background-color: rgba(0, 0, 0, 0.42);">Get answers and learn more about TimeOFF</h1>
-                                          <p class="fg-white" style="padding:5px; background-color: rgba(0, 0, 0, 0.42);">
-                                              To let you know how to work with TimeOFF we've prepared answers for the most Frequently Asked Questions and instructions how to install/configure the app for your organisation.
-                                          </p>
-                                       </div>
-                                  </div>
-                          </div>
-                      </div>
+         <meta property="og:type" content="website">
+         <meta property="og:title" content="TimeOFF - The Employees' Leave Requests App for SharePoint">
+         <meta property="og:url" content="http://www.timeoff.fild.net">
+         <meta property="og:image2" content="http://www.timeoff.fild.net/image2.png">
+         <meta property="og:description" content="TimeOff for SharePoint Server 2013 is an application designed for Human Resources departments, streamlining the process of submitting and processing employees' leave requests. The application enables employees to submit leave requests with ease, while allowing authorized staff to accept or reject such requests.">
+         <meta name="apple-mobile-web-app-capable" content="yes">
+         <meta name="apple-mobile-web-app-fullscreen" content="yes">
+         <meta name="apple-mobile-web-app-status-bar-style" content="black">-->
+      <!--<link rel="shortcut icon" href="http://www.timeoff.fild.net/favicon.ico" type="image2/ico">
+         <link rel="icon" href="http://www.timeoff.fild.net/favicon.png" type="image2s/png">
+         <link rel="apple-touch-icon" href="http://www.timeoff.fild.net/fav64.png" type="image2/png">
+         <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600' rel='stylesheet' type='text/css'>
+         <link rel="stylesheet" type="text/css" href="normalize.css">
+         <link rel="stylesheet" type="text/css" href="style.css">
+         <link rel="author" href="http://www.timeoff.fild.net/humans.txt">
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+         <script src="js/waypoints.min.js"></script>
+         <script src="js/scrollTo.js"></script>
+         <script src="js/script.js"></script>
+         <script src="js/carousel.js"></script>-->
+      <link href="css/iconFont.css" rel="stylesheet">
+      <link rel="stylesheet" href="css/metro-bootstrap.css">
+      <link rel="stylesheet" href="css/metro-bootstrap-responsive.css">
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="css/table.css">
+      <script src="js/jquery.min.js"></script>
+      <script src="js/jquery.widget.min.js"></script>
+      <script src="js/metro.min.js"></script>
+   </head>
+   <body class="metro" style="background-color: rgb(238, 30, 105);">
+      <div>
+      <section>
+         <div class="navigation-bar dark fixed-top">
+            <div class="navigation-bar-content container">
+               <a href="/" class="element">
+               <img src="img/logo-white.svg" class="small-logo">
+               </a>
+               <span class="element-divider"></span>
+               <a class="element1 pull-menu" href="#"></a>
+               <ul class="element-menu place-right" style="display: block;">
+                  <li>
+                     <a class="without-icon" href="/index.html">About</a>
+                  </li>
+                  <li>
+                     <a class="without-icon" href="/index.html">Features</a>
+                  </li>
+                  <li>
+                     <a href="/compare.html" class="without-icon">Compare</a>
+                  </li>
+                  <li>
+                     <a href="/faq.html" class="without-icon">FAQ</a>
+                  </li>
+                  <li>
+                     <a href="/contact.html" class="without-icon">Contact</a>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </section>
+      <section>
+         <div style="background: url(img/bgr21.png) top left no-repeat; background-size: cover; height: auto;">
+            <div class="container" style="padding: 50px 20px">
+               <div class="grid">
+                  <div class="row">
+                     <div class="span12">
+                        <div class="row">
+                           <div class="span12" >
+                              <h1 class="fg-white" style="padding:5px; background-color: rgba(0, 0, 0, 0.42);">Get answers and learn more about TimeOFF</h1>
+                              <p class="fg-white" style="padding:5px; background-color: rgba(0, 0, 0, 0.42);">
+                                 To let you know how to work with TimeOFF we've prepared answers for the most Frequently Asked Questions and instructions how to install/configure the app for your organisation.
+                              </p>
+                           </div>
+                        </div>
+                     </div>
                   </div>
                </div>
-          </div>
-        </section>
-            <section>
-              <div style="height: auto;background-color: white;">
-                  <div class="container" style="padding: 50px 20px">
-                      <div class="grid">
-                          <div class="row">
-                              <div class="span12">
-                                  <h2 class="left">Frequently Asked Questions</h2>
-                                  <br/>
-                <div class="notices">
-
-                    <div class="panel" data-role="panel">
-                    <div class="panel-header bg-lightBlue fg-white" id="question_2">
-                       2. How does a user license work?
-                    </div>
-                    <div class="panel-content" style="display: none;" id="answer_2">Every user that uses an app needs a user license. It allows to access an app and use its features like submitting a leave request form.</div></div>
-
-                    <div class="panel" data-role="panel">
-                    <div class="panel-header bg-lightBlue fg-white" id="question_1">
-                        1. Ability to add comments and attachments to Requests
-                    </div>
-                    <div class="panel-content" style="display: none;" id="answer_1">The option to add a comment and/or attachments when submitting a leave request.</div></div>
-
-
-                    <div class="panel" data-role="panel">
-                    <div class="panel-header bg-lightBlue fg-white" id="question_2">
-                        2. Ability to cc: to others for E-Mail Notification
-                    </div>
-                    <div class="panel-content" style="display: none;" id="answer_2">When executing an action on form there should be an option to input CC person for e-mail notification.</div></div>
-
-                    <div class="panel" data-role="panel">
-                    <div class="panel-header bg-lightBlue fg-white" id="question_3">
-                        3. Ability to submit request on behalf someone
-                    </div>
-
-                    <div class="panel" data-role="panel">
-                    <div class="panel-header bg-lightBlue fg-white" id="question_4">
-                        4. Acceptance paths
-                    </div>
-                    <div class="panel-content" style="display: none;" id="answer_4">Choosing acceptance paths when adding leave types.</div></div>
-
-
-                    <div class="panel" data-role="panel">
-                    <div class="panel-header bg-lightBlue fg-white" id="question_5">
-                        5. Activating/Deactivating E-Mail Notifications
-                    </div>
-                    <div class="panel-content" style="display: none;" id="answer_5">Activating and deactivating e-mail notifications through e-mail templates.</div></div>
-
-
-                    <div class="panel" data-role="panel">
-                    <div class="panel-header bg-lightBlue fg-white" id="question_6">
-                        6. Apply for leave with no available days off
-                    </div>
-                    <div class="panel-content" style="display: none;" id="answer_6">
-                    	Should have option for applying leave even if there is no remaining days off. This leave transaction should appear in system with red flag where line manager and HR Admin should recommend it before final approval. Ability to submit leave request event if there is no available leave. We propose that in this scenario user should submit unpaid leave.
-                    	</div></div>
-
-
-                    <div class="panel" data-role="panel">
-                    <div class="panel-header bg-lightBlue fg-white" id="question_7">
-                        7. Available leave days summary on main site
-                    </div>
-
-
-                    <div class="panel" data-role="panel">
-                    <div class="panel-header bg-lightBlue fg-white" id="question_8">
-                        8. Available number of days off for a grou
-                    </div>
-                    <div class="panel-content" style="display: none;" id="answer_8">The ability to define available leave days off for a group of employees.</div></div>
-
-
-                    <div class="panel" data-role="panel">
-                    <div class="panel-header bg-lightBlue fg-white" id="question_9">
-                        9. Backup and restore
-                    </div>
-
-
-                    <div class="panel" data-role="panel">
-                    <div class="panel-header bg-lightBlue fg-white" id="question_10">
-                        10. Bulk Generating Of Bounds
-                    </div>
-                    <div class="panel-content" style="display: none;" id="answer_10">Bulk generating is bound by location and/or region.</div></div>
-
-
-                    <div class="panel" data-role="panel">
-                    <div class="panel-header bg-lightBlue fg-white" id="question_11">
-                        11. Calendar Display
-                    </div>
-                    <div class="panel-content" style="display: none;" id="answer_11">Monthly calendar display.</div></div>
-
-
-                    <div class="panel" data-role="panel">
-                    <div class="panel-header bg-lightBlue fg-white" id="question_12">
-                        12. Calendar of my absences/holidays on main site
-                    </div>
-
-
-                    <div class="panel" data-role="panel">
-                    <div class="panel-header bg-lightBlue fg-white" id="question_13">
-                        13. Cancellation Requests
-                    </div>
-                    <div class="panel-content" style="display: none;" id="answer_13">Employees can send a cancellation request to the person who approved their leave request.</div></div>
-
-
-                    <div class="panel" data-role="panel">
-                    <div class="panel-header bg-lightBlue fg-white" id="question_14">
-                        14. Cloud Technology
-                    </div>
-                    <div class="panel-content" style="display: none;" id="answer_14">App Should be over cloud technology.</div></div>
-
-                    <div class="panel" data-role="panel">
-                    <div class="panel-header bg-lightBlue fg-white" id="question_15">
-                        15. Creating Day Structure
-                    </div>
-                    <div class="panel-content" style="display: none;" id="answer_15">Day structure instead of hours.</div></div>
-
-                    <div class="panel" data-role="panel">
-                    <div class="panel-header bg-lightBlue fg-white" id="question_16">
-                        16. Date Format
-                    </div>
-                    <div class="panel-content" style="display: none;" id="answer_16">Date will be in UK format in all views (dd/mm/yyyy).</div></div>
-
-                    <div class="panel" data-role="panel">
-                    <div class="panel-header bg-lightBlue fg-white" id="question_17">
-                        17. Delegation Features
-                    </div>
-                    <div class="panel-content" style="display: none;" id="answer_17">
-                    	Features like delegation, block leave, leave adjustment.
-                   	</div></div>
-
-					<div class="panel" data-role="panel">
-     <div class="panel-header bg-lightBlue fg-white" id="question_18">
-                        18. Department
-                    </div>
-                    <div class="panel-content" style="display: none;" id="answer_18">
-						Dividing employees by department.
-                    </div></div>
-
-                    <div class="panel" data-role="panel">
-                    <div class="panel-header bg-lightBlue fg-white" id="question_19">
-                        19. Department
-                    </div>
-                    <div class="panel-content" style="display: none;" id="answer_19">
-                    	Wise employee leave transaction.
-                   	</div></div>
-
-                    <div class="panel" data-role="panel">
-                    <div class="panel-header bg-lightBlue fg-white" id="question_20">
-                        20. Editing e-email templates
-                    </div>
-                    <div class="panel-content" style="display: none;" id="answer_20">
-                   	</div></div>
-
-                    <div class="panel" data-role="panel">
-                    <div class="panel-header bg-lightBlue fg-white" id="question_21">
-                        21. E-Mail Next Stage Notifications
-                    </div>
-                    <div class="panel-content" style="display: none;" id="answer_21">
-                    			If leave is allowed at certain approval stage, the application should be sent for next stage of approval through e-mail notification.
-                   	</div></div>
-
-					<!-- Instalacje alternatywne -->
-                    <div class="panel" data-role="panel">
-                    <div class="panel-header bg-lightBlue fg-white" id="question_22">
-                        22. E-mail notification
-                    </div>
-                    <div class="panel-content" style="display: none;" id="answer_22">
-                    	With option to enable/disable.
-                   	</div></div>
-
-					<!-- Ustawienia regionalne  -->
-                    <div class="panel" data-role="panel">
-                    <div class="panel-header bg-lightBlue fg-white" id="question_23">
-                        23. E-Mail Notifications
-                    </div>
-                    <div class="panel-content" style="display: none;" id="answer_23">
-                    	E-mails notify of leave requests, approvals, rejections, cancellations to applicants, HR managers. E-mail notifications can be turned on and off through the administration panel.
-                   	</div></div>
-
-
-                    <div class="panel" data-role="panel">
-                    <div class="panel-header bg-lightBlue fg-white" id="question_24">
-                        24. Employee can reject the leave application
-                    </div>
-                    <div class="panel-content" style="display: none;" id="answer_24">
-                    	At any level of approval with an automatic e-mail notification to all parties.
-                   	</div></div>
-
-
-                   	<div class="panel" data-role="panel">
-                    <div class="panel-header bg-lightBlue fg-white" id="question_25">
-                        25. Employee Details in Home page
-                    </div>
-                    <div class="panel-content" style="display: none;" id="answer_25">
-                    	In the Home page, Users can view their Employee details, Last leave details and its status and, Superiors hierarchy (S1, S2 & Functional Head) who can approve Leave. Users can also see their Subordinates leave details. Additional informations on home page. Employee details, superiors, information about approvers for that employee etc.
-                   	</div></div>
-                   	<div class="panel" data-role="panel">
-                    <div class="panel-header bg-lightBlue fg-white" id="question_26">
-                        26. Employee Hours Display
-                    </div>
-                    <div class="panel-content" style="display: none;" id="answer_26">
-                    	   Can we add “Total hours/days” to the employee profile so we can use this to calculate the total hours/days worked per month (excluding absences).
-                   	</div></div>
-                   	<div class="panel" data-role="panel">
-                    <div class="panel-header bg-lightBlue fg-white" id="question_27">
-                        27. Employee User Info
-                    </div>
-                    <div class="panel-content" style="display: none;" id="answer_27">
-                    	   Employee profile can be available through Office365. No employee life cycle (e.g. Date of joining, Date confirmation etc.) is available.
-                   	</div></div>
-
-                   	<div class="panel" data-role="panel">
-                    <div class="panel-header bg-lightBlue fg-white" id="question_28">
-                    28. Exception cases in hr policies
-                    </div>
-                    <div class="panel-content" style="display: none;" id="answer_28">
-                    	   Exceptional cases in HR policies, such as special leave entitlement for individuals should be available.
-                   	</div></div>
-
-                   	 <div class="panel" data-role="panel">
-                     <div class="panel-header bg-lightBlue fg-white" id="question_29">
-                        29. Full calendar view
-                    </div>
-                    <div class="panel-content" style="display: none;" id="answer_29">
-                   	</div></div>
-                   	<div class="panel" data-role="panel">
-                    <div class="panel-header bg-lightBlue fg-white" id="question_30">
-                        30. Generating reports.
-                    </div>
-                    <div class="panel-content" style="display: none;" id="answer_30">
-                   	</div></div>
-                   	<div class="panel" data-role="panel">
-                    <div class="panel-header bg-lightBlue fg-white" id="question_31">
-                        31. Historic Dat
-                    </div>
-                    <div class="panel-content" style="display: none;" id="answer_31">
-                    	   As admins can we add historic data for a particular year by uploading.
-                   	</div></div>
-					<div class="panel" data-role="panel">
-     <div class="panel-header bg-lightBlue fg-white" id="question_32">
-                        32. Holiday list on main site
-                    </div>
-                    <div class="panel-content" style="display: none;" id="answer_32">
-                   	</div></div>
-                   	<div class="panel" data-role="panel">
-                    <div class="panel-header bg-lightBlue fg-white" id="question_33">
-                        33. Individual employee leave transaction
-                    </div>
-                    <div class="panel-content" style="display: none;" id="answer_33">
-                   	</div></div>
-                   	<div class="panel" data-role="panel">
-                    <div class="panel-header bg-lightBlue fg-white" id="question_34">
-                        34. Interactive calendar for choosing dates
-                    </div>
-                    <div class="panel-content" style="display: none;" id="answer_34">
-                   	</div></div>
-                   	<div class="panel" data-role="panel">
-                    <div class="panel-header bg-lightBlue fg-white" id="question_35">
-                        35. Leave balanc
-                    </div>
-                    <div class="panel-content" style="display: none;" id="answer_35">
-                    	Administrator can adjust Leave balance of an employee.
-                   	</div></div>
-                   	<div class="panel" data-role="panel">
-                    <div class="panel-header bg-lightBlue fg-white" id="question_36">
-                        36. Leave entitlement verificatio
-                    </div>
-                    <div class="panel-content" style="display: none;" id="answer_36">
-                    	The ability for every employee to verify independently his or her leave entitlements available.
-                   	</div></div>
-                   	<div class="panel" data-role="panel">
-                    <div class="panel-header bg-lightBlue fg-white" id="question_37">
-                        37. Leave Process
-                    </div>
-                    <div class="panel-content" style="display: none;" id="answer_37">
-                    	Standard users are not able to see the leave process (who is immediate manager, immediate manager’s manager or final approver. The system will forward, recommend, approve and display the leave process for each employee (to the HR manager and/or administrator). Employees can cancel application at any level of approval.
-                   	</div></div>
-                   	<div class="panel" data-role="panel">
-                    <div class="panel-header bg-lightBlue fg-white" id="question_38">
-                        38. Leave records may printed and/or generated into report
-                    </div>
-                    <div class="panel-content" style="display: none;" id="answer_38">
-                    	Leave records may be printed out or generated into reports - print action for reports.
-                   	</div></div>
-                   	<div class="panel" data-role="panel">
-                    <div class="panel-header bg-lightBlue fg-white" id="question_39">
-                        39. Leave Request and Selection
-                    </div>
-                    <div class="panel-content" style="display: none;" id="answer_39">
-                    	Supports whole days and employees can apply for a specific number of hours during one day. Duration is selected from a calendar. Choosing a representative has been removed.
-                   	</div></div>
-                   	<div class="panel" data-role="panel">
-                    <div class="panel-header bg-lightBlue fg-white" id="question_40">
-                        40. Leave Request Display
-                    </div>
-                    <div class="panel-content" style="display: none;" id="answer_40">
-                    	Leave request form should display employee code, employee name, designation, department, date of joining, date of confirmation, date of last availed leave, past and current leave transaction and respective leave rule and policy and consequently notification email should have the same information, so all level approvers will know these required information about an applicant.
-                   	</div></div>
-                   	<div class="panel" data-role="panel">
-                    <div class="panel-header bg-lightBlue fg-white" id="question_41">
-                        41. Leave Request History View (My Forms)
-                    </div>
-                    <div class="panel-content" style="display: none;" id="answer_41">
-                    	Applicants can see the history of their own requests along with its status and a calendar view. HR Managers can additionally see a history of leave requests of employees from their department/region. Assistants can see leave requests of employees they are assisting.
-                   	</div></div>
-                   	<div class="panel" data-role="panel">
-                    <div class="panel-header bg-lightBlue fg-white" id="question_41">
-                        41. Leave Request History View (My Forms)
-                    </div>
-                    <div class="panel-content" style="display: none;" id="answer_41">
-                    	Applicants can see the history of their own requests along with its status and a calendar view. HR Managers can additionally see a history of leave requests of employees from their department/region. Assistants can see leave requests of employees they are assisting.
-                   	</div></div>
-                   	<div class="panel" data-role="panel">
-                    <div class="panel-header bg-lightBlue fg-white" id="question_42">
-                        42. Leave Transactions Display
-                    </div>
-                    <div class="panel-content" style="display: none;" id="answer_42">
-                    	Leave transactions should contain opening balance, leave availed, current balance. Full leave transactions can be seen by Administration panel only. Applicant can see only remaining days off in current year.
-                   	</div></div>
-                   	<div class="panel" data-role="panel">
-                    <div class="panel-header bg-lightBlue fg-white" id="question_43">
-                        43. Leave Type Assignment
-                    </div>
-                    <div class="panel-content" style="display: none;" id="answer_43">
-                    	The system should be designed to handle the leave rules of different companies in different countries. Each company should be able to configure the leave rules to fit their specific company policies.
-                   	</div></div>
-                   	<div class="panel" data-role="panel">
-                    <div class="panel-header bg-lightBlue fg-white" id="question_44">
-                        44. Line manager holiday display
-                    </div>
-                    <div class="panel-content" style="display: none;" id="answer_44">
-                    	Is it possible for a team manager to see their holidays etc. as well as their teams on the front page.
-                   	</div></div>
-                   	<div class="panel" data-role="panel">
-                    <div class="panel-header bg-lightBlue fg-white" id="question_45">
-                        45. Location wise report should be available
-                    </div>
-                    <div class="panel-content" style="display: none;" id="answer_45">
-                    	All reports we would be precised after completion of functional elements of leave request system. We would need to know what data should be available on reports.
-                   	</div></div>
-                   	<div class="panel" data-role="panel">
-                    <div class="panel-header bg-lightBlue fg-white" id="question_46">
-                        46. Locations
-                    </div>
-                    <div class="panel-content" style="display: none;" id="answer_46">
-                    	Dividing employees by locations.
-                   	</div></div>
-                   	<div class="panel" data-role="panel">
-                    <div class="panel-header bg-lightBlue fg-white" id="question_47">
-                        47. Managing employees without sharepoint account
-                    </div>
-                    <div class="panel-content" style="display: none;" id="answer_47">
-                    	All reports we would be precised after completion of functional elements of leave request system. We would need to know what data should be available on reports.
-                   	</div></div>
-                   	<div class="panel" data-role="panel">
-                    <div class="panel-header bg-lightBlue fg-white" id="question_48">
-                        48. Monthly and yearly leave records
-                    </div>
-
-                   	<div class="panel" data-role="panel">
-                    <div class="panel-header bg-lightBlue fg-white" id="question_49">
-                        49. My leave requests list summary on main site
-                    </div>
-
-                   	<div class="panel" data-role="panel">
-                    <div class="panel-header bg-lightBlue fg-white" id="question_50">
-                        50. Personal Employee Information
-                    </div>
-                    <div class="panel-content" style="display: none;" id="answer_50">
-                    	It is possible to add and display the following information about an employee: date of birth, joining date, retirement date.
-                   	</div></div>
-                   	<div class="panel" data-role="panel">
-                    <div class="panel-header bg-lightBlue fg-white" id="question_51">
-                        51. Planning leaves
-                    </div>
-
-                   	<div class="panel" data-role="panel">
-                    <div class="panel-header bg-lightBlue fg-white" id="question_52">
-                        52. Printing leave requests and reports
-                    </div>
-                    <div class="panel-content" style="display: none;" id="answer_52">
-                    	Print option for leave request.
-                   	</div></div>
-                   	<div class="panel" data-role="panel">
-                    <div class="panel-header bg-lightBlue fg-white" id="question_53">
-                        53. Public Holiday Date-Range
-                    </div>
-                    <div class="panel-content" style="display: none;" id="answer_53">
-                    	Public holidays can be assigned with a date range.
-                   	</div></div>
-                   	<div class="panel" data-role="panel">
-                    <div class="panel-header bg-lightBlue fg-white" id="question_54">
-                        54. Region
-                    </div>
-                    <div class="panel-content" style="display: none;" id="answer_54">
-                    	Dividing employees by region.
-                   	</div></div>
-
-                   	<div class="panel" data-role="panel">
-                    <div class="panel-header bg-lightBlue fg-white" id="question_55">
-                        55. Report: Employees on leave.
-                    </div>
-
-                   	<div class="panel" data-role="panel">
-                    <div class="panel-header bg-lightBlue fg-white" id="question_56">
-                        56. Report: Leave Summary.
-                    </div>
-
-                   	<div class="panel" data-role="panel">
-                    <div class="panel-header bg-lightBlue fg-white" id="question_57">
-                        57. Reports available for download
-                    </div>
-                    <div class="panel-content" style="display: none;" id="answer_57">
-                    	Should be able to download reports in text, csv, excel, pdf for SAP and other ERP. MD only for export to simple files: csv and pdf, for rest we need more info.
-                   	</div></div>
-                   	<div class="panel" data-role="panel">
-                    <div class="panel-header bg-lightBlue fg-white" id="question_58">
-                        58. Requesting leaves on behalf of other employees
-                    </div>
-                    <div class="panel-content" style="display: none;" id="answer_58">
-                    	Requesting leaves on behalf of other employees by managers, hr members, etc.
-                   	</div></div>
-                   	<div class="panel" data-role="panel">
-                    <div class="panel-header bg-lightBlue fg-white" id="question_59">
-                        59. Roles of Assistant
-                    </div>
-                    <div class="panel-content" style="display: none;" id="answer_59">
-                    	Assistant can accept/reject leave requests.
-                   	</div></div>
-                   	<div class="panel" data-role="panel">
-                    <div class="panel-header bg-lightBlue fg-white" id="question_60">
-                        60. Roles of Global Administrators
-                    </div>
-                    <div class="panel-content" style="display: none;" id="answer_60">
-                    	The Global administrator has access to every user. The role of the global administrator is to divide HR managers among Regions/Departments. Administrators add and define whether leave type is custom or unlimited. Leave types are editable.
-                   	</div></div>
-                   	<div class="panel" data-role="panel">
-                    <div class="panel-header bg-lightBlue fg-white" id="question_61">
-                        61. Roles of HR Manager
-                    </div>
-                    <div class="panel-content" style="display: none;" id="answer_61">
-                    	The HR manager manages the employees that are assigned to their particular department.
-                   	</div></div>
-                   	<div class="panel" data-role="panel">
-                    <div class="panel-header bg-lightBlue fg-white" id="question_62">
-                        62. Search
-                    </div>
-                    <div class="panel-content" style="display: none;" id="answer_62">
-                    	The ability to search in the employees screen.
-                   	</div></div>
-                   	<div class="panel" data-role="panel">
-                    <div class="panel-header bg-lightBlue fg-white" id="question_63">
-                        63. Set the application for different countries
-                    </div>
-                    <div class="panel-content" style="display: none;" id="answer_63">
-                    	For example, public holiday per country, local HR contact.
-                   	</div></div>
-                   	<div class="panel" data-role="panel">
-                    <div class="panel-header bg-lightBlue fg-white" id="question_64">
-                        64. Specifying an employee’s assistant.
-                    </div>
-
-                   	<div class="panel" data-role="panel">
-                    <div class="panel-header bg-lightBlue fg-white" id="question_65">
-                        65. User can view their complete leave records anytime.
-                    </div>
-
-                   	<div class="panel" data-role="panel">
-                    <div class="panel-header bg-lightBlue fg-white" id="question_66">
-                        66. User Privacy
-                    </div>
-
-                   	<div class="panel" data-role="panel">
-                    <div class="panel-header bg-lightBlue fg-white" id="question_67">
-                        67. User Security
-                    </div>
-
-                   	<div class="panel" data-role="panel">
-                    <div class="panel-header bg-lightBlue fg-white" id="question_68">
-                        68. Web based application
-                    </div>
-                    <div class="panel-content" style="display: none;" id="answer_68">
-                    	This system would be a Web based application that can be used over the internet.
-                   	</div></div>
-                   	<div class="panel" data-role="panel">
-                    <div class="panel-header bg-lightBlue fg-white" id="question_69">
-                        69. Weekly Calendar
-                    </div>
-                    <div class="panel-content" style="display: none;" id="answer_69">
-                    	It should be mastered by location and cadre. This location based weekly calendar should specify the working days (5 day week, 5-1/2 day week, 6 day week). The number of Leave Balance credited annually at the beginning of the Leave Year will depend on this.
-                   	</div></div>
-
-                </div>
-            	<h2>Ideas in progres:</h2>
-            	<div class="notices">
-
-                    <div class="panel" data-role="panel">
-                    <div class="panel-header bg-lightBlue fg-white" id="question_70">
-                        1. Attach any document into the form.
-                    </div>
-                    <div class="panel-content" style="display: none;" id="answer_70">For example, the sick leave certificate from doctor.</div></div>
-
-                    <div class="panel" data-role="panel">
-                    <div class="panel-header bg-lightBlue fg-white" id="question_71">
-                        2. Attachments
-                    </div>
-                    <div class="panel-content" style="display: none;" id="answer_71">Possibility to attach files to requests.</div></div>
-
-
-                    <div class="panel" data-role="panel">
-                    <div class="panel-header bg-lightBlue fg-white" id="question_72">
-                        3. Attributing
-                    </div>
-                    <div class="panel-content" style="display: none;" id="answer_72">Specific roles (i.e. Admin, HR member, Manager etc.).</div></div>
-
-
-                    <div class="panel" data-role="panel">
-                    <div class="panel-header bg-lightBlue fg-white" id="question_73">
-                        4. Backup and recovery options
-                    </div>
-                    <div class="panel-content" style="display: none;" id="answer_73">Possibility to attach files to requests.</div></div>
-
-                    <div class="panel" data-role="panel">
-                    <div class="panel-header bg-lightBlue fg-white" id="question_74">
-                        5. Each employee will be assigned to one Leave Administrator (either by Location or by Cadre)
-                    </div>
-                    <div class="panel-content" style="display: none;" id="answer_74">A Leave Administrator will be able to view and administer only the employees assigned to him/her.</div></div>
-
-                    <div class="panel" data-role="panel">
-                    <div class="panel-header bg-lightBlue fg-white" id="question_76">
-                        6. Exporting reports to excel files.
-                    </div>
-
-                    <div class="panel" data-role="panel">
-                    <div class="panel-header bg-lightBlue fg-white" id="question_77">
-                        7. Handle the leave rules of different companies in different countries
-                    </div>
-                    <div class="panel-content" style="display: none;" id="answer_77">The system should be designed to handle the leave rules of different companies in different countries. Each company should be able to configure the leave rules to fit their specific company policies.</div></div>
-
-                    <div class="panel" data-role="panel">
-                    <div class="panel-header bg-lightBlue fg-white" id="question_78">
-                        8. Leave balance
-                    </div>
-                    <div class="panel-content" style="display: none;" id="answer_78">Possibility to exceptionally request days/hours off with no hours left on leave balance.</div></div>
-
-                    <div class="panel" data-role="panel">
-                    <div class="panel-header bg-lightBlue fg-white" id="question_79">
-                        9. Manager sees only subordinates
-                    </div>
-
-                    <div class="panel" data-role="panel">
-                    <div class="panel-header bg-lightBlue fg-white" id="question_80">
-                        10. Request leaves for a specific number of hours
-                    </div>
-
-                    <div class="panel" data-role="panel">
-                    <div class="panel-header bg-lightBlue fg-white" id="question_81">
-                        11. Search options - Advanced employee search options
-                    </div>
-
-                    <div class="panel" data-role="panel">
-                    <div class="panel-header bg-lightBlue fg-white" id="question_82">
-                        12. Setting custom work hours
-                    </div>
-
-                    <div class="panel" data-role="panel">
-                    <div class="panel-header bg-lightBlue fg-white" id="question_83">
-                        13. Software Licensing
-                    </div>
-
-                    <div class="panel" data-role="panel">
-                    <div class="panel-header bg-lightBlue fg-white" id="question_84">
-                        14. Attachments
-                    </div>
-                    <div class="panel-content" style="display: none;" id="answer_84">Possibility to attach files to requests.</div></div>
-
-                    <div class="panel" data-role="panel">
-                    <div class="panel-header bg-lightBlue fg-white" id="question_85">
-                        15. Specifying start time when requesting partial leave of absence (AM or PM)
-                    </div>
-
-                    <div class="panel" data-role="panel">
-                    <div class="panel-header bg-lightBlue fg-white" id="question_85">
-                        16. User Manual
-                    </div>
-                    <div class="panel-content" style="display: none;" id="answer_85">It should be available in the application.</div></div>
-
-                    </div>
-                <h2>Ideas that are waiting for implementation:</h2>
-                <div class="notices">
-
-                    <div class="panel" data-role="panel">
-                    <div class="panel-header bg-lightBlue fg-white" id="question_86">
-                        1. Additional filters for individual reports.
-                    </div>
-                    <div class="panel-content" style="display: none;" id="answer_86">Additional filters for individual reports.</div></div>
-
-                    <div class="panel" data-role="panel">
-                    <div class="panel-header bg-lightBlue fg-white" id="question_87">
-                        2. All forms view restrictions.
-                    </div>
-                    <div class="panel-content" style="display: none;" id="answer_87">HR sees employees from his own region (possibility to add additional locations). Managers sees employees they manage.</div></div>
-
-                    <div class="panel" data-role="panel">
-                    <div class="panel-header bg-lightBlue fg-white" id="question_88">
-                        3. Approval Path for cancellation requests.
-                    </div>
-                    <div class="panel-content" style="display: none;" id="answer_88">Manager->Department Manager approval path for cancellation requests.</div></div>
-
-                    <div class="panel" data-role="panel">
-                    <div class="panel-header bg-lightBlue fg-white" id="question_89">
-                        4. Balances.
-                    </div>
-                    <div class="panel-content" style="display: none;" id="answer_89">Setup proportionate balances for employees that starts in mid-calendar year.</div></div>
-
-                    <div class="panel" data-role="panel">
-                    <div class="panel-header bg-lightBlue fg-white" id="question_90">
-                        5. Calendar view/Monthly reports filter changes.
-                    </div>
-
-                    <div class="panel" data-role="panel">
-                    <div class="panel-header bg-lightBlue fg-white" id="question_91">
-                        6. Company LOGO.
-                    </div>
-                    <div class="panel-content" style="display: none;" id="answer_92">Ability to upload company logo to personalize the interface.</div></div>
-
-                    <div class="panel" data-role="panel">
-                    <div class="panel-header bg-lightBlue fg-white" id="question_93">
-                        7. Department Manager approval path.
-                    </div>
-                    <div class="panel-content" style="display: none;" id="answer_93">Adding a department manager role and approval path.</div></div>
-
-                    <div class="panel" data-role="panel">
-                    <div class="panel-header bg-lightBlue fg-white" id="question_94">
-                        8. E-Mail notification of leave approval/rejection to HR.
-                    </div>
-                    <div class="panel-content" style="display: none;" id="answer_94">HR receives E-Mails of employee leave approval/rejection.</div></div>
-
-                    <div class="panel" data-role="panel">
-                    <div class="panel-header bg-lightBlue fg-white" id="question_95">
-                        9. In app user manuals.
-                    </div>
-                    <div class="panel-content" style="display: none;" id="answer_95">Manuals available for user, manager, department manager, hr and administrator.</div></div>
-
-                    <div class="panel" data-role="panel">
-                    <div class="panel-header bg-lightBlue fg-white" id="question_96">
-                        10. Key Board Shortcuts
-                    </div>
-
-                    <div class="panel" data-role="panel">
-                    <div class="panel-header bg-lightBlue fg-white" id="question_97">
-                        11. Leave Accumulation Rule.
-                    </div>
-                    <div class="panel-content" style="display: none;" id="answer_97">Leave accumulation rule for employed under and over 50.</div></div>
-
-                    <div class="panel" data-role="panel">
-                    <div class="panel-header bg-lightBlue fg-white" id="question_98">
-                        12. Leave Credit Infrastructure.
-                    </div>
-                    <div class="panel-content" style="display: none;" id="answer_98">Create a new database table sufficient for the required leave credit rules.</div></div>
-
-                    <div class="panel" data-role="panel">
-                    <div class="panel-header bg-lightBlue fg-white" id="question_99">
-                        13. Leave Credit Rule.
-                    </div>
-                    <div class="panel-content" style="display: none;" id="answer_99">The yearly leave credit rule for each employee dependant on employee’s workdays.</div></div>
-
-                    <div class="panel" data-role="panel">
-                    <div class="panel-header bg-lightBlue fg-white" id="question_100">
-                        14. Leave Policies
-                    </div>
-                    <div class="panel-content" style="display: none;" id="answer_100">Ability to have different leave policies for different companies/ countries.</div></div>
-
-                    <div class="panel" data-role="panel">
-                    <div class="panel-header bg-lightBlue fg-white" id="question_101">
-                        15. Leave purpose can be put on leave request form.
-                    </div>
-
-                    <div class="panel" data-role="panel">
-                    <div class="panel-header bg-lightBlue fg-white" id="question_102">
-                        16. Leave transactions
-                    </div>
-                    <div class="panel-content" style="display: none;" id="answer_102">The system should provide full audit trails of leave transaction of each users, approvers and staffs’ leave balances and plans.</div></div>
-
-                    <div class="panel" data-role="panel">
-                    <div class="panel-header bg-lightBlue fg-white" id="question_103">
-                        17. Logging in without a sharepoint account.
-                    </div>
-                    <div class="panel-content" style="display: none;" id="answer_103">Log in without a sharepoint account.</div></div>
-
-                    <div class="panel" data-role="panel">
-                    <div class="panel-header bg-lightBlue fg-white" id="question_104">
-                        18. LTA Rule.
-                    </div>
-
-                    <div class="panel" data-role="panel">
-                    <div class="panel-header bg-lightBlue fg-white" id="question_105">
-                        19. Maternity Leave Extension Rule.
-                    </div>
-
-                    <div class="panel" data-role="panel">
-                    <div class="panel-header bg-lightBlue fg-white" id="question_106">
-                        20. Maternity Leave Rule.
-                    </div>
-
-                    <div class="panel" data-role="panel">
-                    <div class="panel-header bg-lightBlue fg-white" id="question_107">
-                        21. Medical Leave Rule
-                    </div>
-
-                    <div class="panel" data-role="panel">
-                    <div class="panel-header bg-lightBlue fg-white" id="question_108">
-                        22. Mobile devices.
-                    </div>
-                    <div class="panel-content" style="display: none;" id="answer_108">Leave tracking and approval can be done on mobile devices, especially for iOS and Android.</div></div>
-
-                    <div class="panel" data-role="panel">
-                    <div class="panel-header bg-lightBlue fg-white" id="question_109">
-                        23. Multi-language option.
-                    </div>
-                    <div class="panel-content" style="display: none;" id="answer_109">English, French, German, Spanish, Chinese etc.</div></div>
-
-                    <div class="panel" data-role="panel">
-                    <div class="panel-header bg-lightBlue fg-white" id="question_110">
-                        24. My forms full history
-                    </div>
-
-                    <div class="panel" data-role="panel">
-                    <div class="panel-header bg-lightBlue fg-white" id="question_111">
-                        25. New Joiner Leave Credit Rule.
-                    </div>
-                    <div class="panel-content" style="display: none;" id="answer_111">Auto calculated leave credit for new employees.</div></div>
-
-                    <div class="panel" data-role="panel">
-                    <div class="panel-header bg-lightBlue fg-white" id="question_112">
-                        26. Outlook calendar integration.
-                    </div>
-
-                    <div class="panel" data-role="panel">
-                    <div class="panel-header bg-lightBlue fg-white" id="question_113">
-                        27. Pending Cancellation status.
-                    </div>
-                    <div class="panel-content" style="display: none;" id="answer_113">Forms pending cancellation show in ‘forms for approval’ tray.</div></div>
-
-                    <div class="panel" data-role="panel">
-                    <div class="panel-header bg-lightBlue fg-white" id="question_114">
-                        28. Report I.
-                    </div>
-                    <div class="panel-content" style="display: none;" id="answer_114">Department wise employee leave transaction.</div></div>
-
-                    <div class="panel" data-role="panel">
-                    <div class="panel-header bg-lightBlue fg-white" id="question_115">
-                        29. Report II.
-                    </div>
-                    <div class="panel-content" style="display: none;" id="answer_115">Individual employee leave transaction.</div></div>
-
-                    <div class="panel" data-role="panel">
-                    <div class="panel-header bg-lightBlue fg-white" id="question_116">
-                        30. Report III.
-                    </div>
-                    <div class="panel-content" style="display: none;" id="answer_116">Location wise report should be available.</div></div>
-
-                    <div class="panel" data-role="panel">
-                    <div class="panel-header bg-lightBlue fg-white" id="question_117">
-                        31. Report IV.
-                    </div>
-                    <div class="panel-content" style="display: none;" id="answer_117">Monthly, Yearly leave record.</div></div>
-
-                    <div class="panel" data-role="panel">
-                    <div class="panel-header bg-lightBlue fg-white" id="question_118">
-                        32. Time zone based, location administration option.
-                    </div>
-
-                    <div class="panel" data-role="panel">
-                    <div class="panel-header bg-lightBlue fg-white" id="question_119">
-                        33. Upload/Download of Leave Calendar and Leave balance/entitlement.
-                    </div>
-
-                    <div class="panel" data-role="panel">
-                    <div class="panel-header bg-lightBlue fg-white" id="question_120">
-                        34. Weekly Holiday Calendar.
-                    </div>
-                    <div class="panel-content" style="display: none;" id="answer_120">It should be mastered by state. This location based Holiday calendar should specify the holidays (Saturday and Sunday, Friday and Saturday; full day on Saturday or half day on Saturday etc.). The number of Leave Balance credited annually at the beginning of the Leave Year will depend on this. When the employee looks at the calendar while applying for leave, the system must show clearly the days which are Company Holidays for his/her location and the weekend holidays applicable to his/her cadre at the Location. It would also be nice to show the days on which he/she has already taken leave.</div></div>
-
-                    <div class="panel" data-role="panel">
-                    <div class="panel-header bg-lightBlue fg-white" id="question_121">
-                        35. Mark a user as disabled.
-                    </div>
-                    <div class="panel-content" style="display: none;" id="answer_121">Is it possible to mark a user as disabled, so they don’t appear in any of the lists etc, but all their information is still there</div></div>
-
-                 </div>
-               </div>
-             </div>
-           </div>
+            </div>
          </div>
+      </section>
+      <section>
+         <div style="height: auto;background-color: white;">
+         <div class="container" style="padding: 50px 20px">
+         <div class="grid">
+         <div class="row">
+         <div class="span12">
+         <h2 class="left">Customers’ ideas implemented in TimeOFF (in various versions):</h2>
+         <br/>
+         <div class="notices">
+         <div class="panel" data-role="panel">
+            <div class="panel-header bg-mauve fg-white" id="question_1">
+               1. Ability to add comments and attachments to Requests
+            </div>
+            <div class="panel-content" style="display: none;" id="answer_1">The option to add a comment and/or attachments when submitting a leave request.</div>
+         </div>
+         <div class="panel" data-role="panel">
+            <div class="panel-header bg-mauve fg-white" id="question_2">
+               2. Ability to cc: to others for E-Mail Notification
+            </div>
+            <div class="panel-content" style="display: none;" id="answer_2">When executing an action on form there should be an option to input CC person for e-mail notification.</div>
+         </div>
+         <div class="panel" data-role="panel">
+         <div class="panel-header panel-header-no-icon bg-mauve fg-white" id="question_3">
+            3. Ability to submit request on behalf someone
+         </div>
+		 </div>
+         <div class="panel" data-role="panel">
+            <div class="panel-header bg-mauve fg-white" id="question_4">
+               4. Acceptance paths
+            </div>
+            <div class="panel-content" style="display: none;" id="answer_4">Choosing acceptance paths when adding leave types.</div>
+         </div>
+         <div class="panel" data-role="panel">
+            <div class="panel-header bg-mauve fg-white" id="question_5">
+               5. Activating/Deactivating E-Mail Notifications
+            </div>
+            <div class="panel-content" style="display: none;" id="answer_5">Activating and deactivating e-mail notifications through e-mail templates.</div>
+         </div>
+         <div class="panel" data-role="panel">
+            <div class="panel-header bg-mauve fg-white" id="question_6">
+               6. Apply for leave with no available days off
+            </div>
+            <div class="panel-content" style="display: none;" id="answer_6">
+               Should have option for applying leave even if there is no remaining days off. This leave transaction should appear in system with red flag where line manager and HR Admin should recommend it before final approval. Ability to submit leave request event if there is no available leave. We propose that in this scenario user should submit unpaid leave.
+            </div>
+         </div>
+         <div class="panel" data-role="panel">
+         <div class="panel-header panel-header-no-icon bg-mauve fg-white" id="question_7">
+            7. Available leave days summary on main site
+         </div>
+		 </div>
+         <div class="panel" data-role="panel">
+            <div class="panel-header bg-mauve fg-white" id="question_8">
+               8. Available number of days off for a grou
+            </div>
+            <div class="panel-content" style="display: none;" id="answer_8">The ability to define available leave days off for a group of employees.</div>
+         </div>
+         <div class="panel" data-role="panel">
+         <div class="panel-header panel-header-no-icon bg-mauve fg-white" id="question_9">
+            9. Backup and restore
+         </div>
+		 </div>
+         <div class="panel" data-role="panel">
+            <div class="panel-header bg-mauve fg-white" id="question_10">
+               10. Bulk Generating Of Bounds
+            </div>
+            <div class="panel-content" style="display: none;" id="answer_10">Bulk generating is bound by location and/or region.</div>
+         </div>
+         <div class="panel" data-role="panel">
+            <div class="panel-header bg-mauve fg-white" id="question_11">
+               11. Calendar Display
+            </div>
+            <div class="panel-content" style="display: none;" id="answer_11">Monthly calendar display.</div>
+         </div>
+         <div class="panel" data-role="panel">
+         <div class="panel-header panel-header-no-icon bg-mauve fg-white" id="question_12">
+            12. Calendar of my absences/holidays on main site
+         </div>
+		 </div>
+         <div class="panel" data-role="panel">
+            <div class="panel-header bg-mauve fg-white" id="question_13">
+               13. Cancellation Requests
+            </div>
+            <div class="panel-content" style="display: none;" id="answer_13">Employees can send a cancellation request to the person who approved their leave request.</div>
+         </div>
+         <div class="panel" data-role="panel">
+            <div class="panel-header bg-mauve fg-white" id="question_14">
+               14. Cloud Technology
+            </div>
+            <div class="panel-content" style="display: none;" id="answer_14">App Should be over cloud technology.</div>
+         </div>
+         <div class="panel" data-role="panel">
+            <div class="panel-header bg-mauve fg-white" id="question_15">
+               15. Creating Day Structure
+            </div>
+            <div class="panel-content" style="display: none;" id="answer_15">Day structure instead of hours.</div>
+         </div>
+         <div class="panel" data-role="panel">
+            <div class="panel-header bg-mauve fg-white" id="question_16">
+               16. Date Format
+            </div>
+            <div class="panel-content" style="display: none;" id="answer_16">Date will be in UK format in all views (dd/mm/yyyy).</div>
+         </div>
+         <div class="panel" data-role="panel">
+            <div class="panel-header bg-mauve fg-white" id="question_17">
+               17. Delegation Features
+            </div>
+            <div class="panel-content" style="display: none;" id="answer_17">
+               Features like delegation, block leave, leave adjustment.
+            </div>
+         </div>
+         <div class="panel" data-role="panel">
+            <div class="panel-header bg-mauve fg-white" id="question_18">
+               18. Department
+            </div>
+            <div class="panel-content" style="display: none;" id="answer_18">
+               Dividing employees by department.
+            </div>
+         </div>
+         <div class="panel" data-role="panel">
+            <div class="panel-header bg-mauve fg-white" id="question_19">
+               19. Department
+            </div>
+            <div class="panel-content" style="display: none;" id="answer_19">
+               Wise employee leave transaction.
+            </div>
+         </div>
+         <div class="panel" data-role="panel">
+            <div class="panel-header bg-mauve fg-white" id="question_20">
+               20. Editing e-email templates
+            </div>
+            <div class="panel-content" style="display: none;" id="answer_20">
+            </div>
+         </div>
+         <div class="panel" data-role="panel">
+            <div class="panel-header bg-mauve fg-white" id="question_21">
+               21. E-Mail Next Stage Notifications
+            </div>
+            <div class="panel-content" style="display: none;" id="answer_21">
+               If leave is allowed at certain approval stage, the application should be sent for next stage of approval through e-mail notification.
+            </div>
+         </div>
+         <!-- Instalacje alternatywne -->
+         <div class="panel" data-role="panel">
+            <div class="panel-header bg-mauve fg-white" id="question_22">
+               22. E-mail notification
+            </div>
+            <div class="panel-content" style="display: none;" id="answer_22">
+               With option to enable/disable.
+            </div>
+         </div>
+         <!-- Ustawienia regionalne  -->
+         <div class="panel" data-role="panel">
+            <div class="panel-header bg-mauve fg-white" id="question_23">
+               23. E-Mail Notifications
+            </div>
+            <div class="panel-content" style="display: none;" id="answer_23">
+               E-mails notify of leave requests, approvals, rejections, cancellations to applicants, HR managers. E-mail notifications can be turned on and off through the administration panel.
+            </div>
+         </div>
+         <div class="panel" data-role="panel">
+            <div class="panel-header bg-mauve fg-white" id="question_24">
+               24. Employee can reject the leave application
+            </div>
+            <div class="panel-content" style="display: none;" id="answer_24">
+               At any level of approval with an automatic e-mail notification to all parties.
+            </div>
+         </div>
+         <div class="panel" data-role="panel">
+            <div class="panel-header bg-mauve fg-white" id="question_25">
+               25. Employee Details in Home page
+            </div>
+            <div class="panel-content" style="display: none;" id="answer_25">
+               In the Home page, Users can view their Employee details, Last leave details and its status and, Superiors hierarchy (S1, S2 & Functional Head) who can approve Leave. Users can also see their Subordinates leave details. Additional informations on home page. Employee details, superiors, information about approvers for that employee etc.
+            </div>
+         </div>
+         <div class="panel" data-role="panel">
+            <div class="panel-header bg-mauve fg-white" id="question_26">
+               26. Employee Hours Display
+            </div>
+            <div class="panel-content" style="display: none;" id="answer_26">
+               Can we add “Total hours/days” to the employee profile so we can use this to calculate the total hours/days worked per month (excluding absences).
+            </div>
+         </div>
+         <div class="panel" data-role="panel">
+            <div class="panel-header bg-mauve fg-white" id="question_27">
+               27. Employee User Info
+            </div>
+            <div class="panel-content" style="display: none;" id="answer_27">
+               Employee profile can be available through Office365. No employee life cycle (e.g. Date of joining, Date confirmation etc.) is available.
+            </div>
+         </div>
+         <div class="panel" data-role="panel">
+            <div class="panel-header bg-mauve fg-white" id="question_28">
+               28. Exception cases in hr policies
+            </div>
+            <div class="panel-content" style="display: none;" id="answer_28">
+               Exceptional cases in HR policies, such as special leave entitlement for individuals should be available.
+            </div>
+         </div>
+         <div class="panel" data-role="panel">
+            <div class="panel-header panel-header-no-icon bg-mauve fg-white" id="question_29">
+               29. Full calendar view
+            </div>
+         </div>
+         <div class="panel" data-role="panel">
+            <div class="panel-header panel-header-no-icon bg-mauve fg-white" id="question_30">
+               30. Generating reports.
+            </div>
+         </div>
+         <div class="panel" data-role="panel">
+            <div class="panel-header bg-mauve fg-white" id="question_31">
+               31. Historic Dat
+            </div>
+            <div class="panel-content" style="display: none;" id="answer_31">
+               As admins can we add historic data for a particular year by uploading.
+            </div>
+         </div>
+         <div class="panel" data-role="panel">
+            <div class="panel-header bg-mauve fg-white" id="question_32">
+               32. Holiday list on main site
+            </div>
+            <div class="panel-content" style="display: none;" id="answer_32">
+            </div>
+         </div>
+         <div class="panel" data-role="panel">
+            <div class="panel-header bg-mauve fg-white" id="question_33">
+               33. Individual employee leave transaction
+            </div>
+            <div class="panel-content" style="display: none;" id="answer_33">
+            </div>
+         </div>
+         <div class="panel" data-role="panel">
+            <div class="panel-header bg-mauve fg-white" id="question_34">
+               34. Interactive calendar for choosing dates
+            </div>
+            <div class="panel-content" style="display: none;" id="answer_34">
+            </div>
+         </div>
+         <div class="panel" data-role="panel">
+            <div class="panel-header bg-mauve fg-white" id="question_35">
+               35. Leave balanc
+            </div>
+            <div class="panel-content" style="display: none;" id="answer_35">
+               Administrator can adjust Leave balance of an employee.
+            </div>
+         </div>
+         <div class="panel" data-role="panel">
+            <div class="panel-header bg-mauve fg-white" id="question_36">
+               36. Leave entitlement verificatio
+            </div>
+            <div class="panel-content" style="display: none;" id="answer_36">
+               The ability for every employee to verify independently his or her leave entitlements available.
+            </div>
+         </div>
+         <div class="panel" data-role="panel">
+            <div class="panel-header bg-mauve fg-white" id="question_37">
+               37. Leave Process
+            </div>
+            <div class="panel-content" style="display: none;" id="answer_37">
+               Standard users are not able to see the leave process (who is immediate manager, immediate manager’s manager or final approver. The system will forward, recommend, approve and display the leave process for each employee (to the HR manager and/or administrator). Employees can cancel application at any level of approval.
+            </div>
+         </div>
+         <div class="panel" data-role="panel">
+            <div class="panel-header bg-mauve fg-white" id="question_38">
+               38. Leave records may printed and/or generated into report
+            </div>
+            <div class="panel-content" style="display: none;" id="answer_38">
+               Leave records may be printed out or generated into reports - print action for reports.
+            </div>
+         </div>
+         <div class="panel" data-role="panel">
+            <div class="panel-header bg-mauve fg-white" id="question_39">
+               39. Leave Request and Selection
+            </div>
+            <div class="panel-content" style="display: none;" id="answer_39">
+               Supports whole days and employees can apply for a specific number of hours during one day. Duration is selected from a calendar. Choosing a representative has been removed.
+            </div>
+         </div>
+         <div class="panel" data-role="panel">
+            <div class="panel-header bg-mauve fg-white" id="question_40">
+               40. Leave Request Display
+            </div>
+            <div class="panel-content" style="display: none;" id="answer_40">
+               Leave request form should display employee code, employee name, designation, department, date of joining, date of confirmation, date of last availed leave, past and current leave transaction and respective leave rule and policy and consequently notification email should have the same information, so all level approvers will know these required information about an applicant.
+            </div>
+         </div>
+         <div class="panel" data-role="panel">
+            <div class="panel-header bg-mauve fg-white" id="question_41">
+               41. Leave Request History View (My Forms)
+            </div>
+            <div class="panel-content" style="display: none;" id="answer_41">
+               Applicants can see the history of their own requests along with its status and a calendar view. HR Managers can additionally see a history of leave requests of employees from their department/region. Assistants can see leave requests of employees they are assisting.
+            </div>
+         </div>
+         <div class="panel" data-role="panel">
+            <div class="panel-header bg-mauve fg-white" id="question_41">
+               41. Leave Request History View (My Forms)
+            </div>
+            <div class="panel-content" style="display: none;" id="answer_41">
+               Applicants can see the history of their own requests along with its status and a calendar view. HR Managers can additionally see a history of leave requests of employees from their department/region. Assistants can see leave requests of employees they are assisting.
+            </div>
+         </div>
+         <div class="panel" data-role="panel">
+            <div class="panel-header bg-mauve fg-white" id="question_42">
+               42. Leave Transactions Display
+            </div>
+            <div class="panel-content" style="display: none;" id="answer_42">
+               Leave transactions should contain opening balance, leave availed, current balance. Full leave transactions can be seen by Administration panel only. Applicant can see only remaining days off in current year.
+            </div>
+         </div>
+         <div class="panel" data-role="panel">
+            <div class="panel-header bg-mauve fg-white" id="question_43">
+               43. Leave Type Assignment
+            </div>
+            <div class="panel-content" style="display: none;" id="answer_43">
+               The system should be designed to handle the leave rules of different companies in different countries. Each company should be able to configure the leave rules to fit their specific company policies.
+            </div>
+         </div>
+         <div class="panel" data-role="panel">
+            <div class="panel-header bg-mauve fg-white" id="question_44">
+               44. Line manager holiday display
+            </div>
+            <div class="panel-content" style="display: none;" id="answer_44">
+               Is it possible for a team manager to see their holidays etc. as well as their teams on the front page.
+            </div>
+         </div>
+         <div class="panel" data-role="panel">
+            <div class="panel-header bg-mauve fg-white" id="question_45">
+               45. Location wise report should be available
+            </div>
+            <div class="panel-content" style="display: none;" id="answer_45">
+               All reports we would be precised after completion of functional elements of leave request system. We would need to know what data should be available on reports.
+            </div>
+         </div>
+         <div class="panel" data-role="panel">
+            <div class="panel-header bg-mauve fg-white" id="question_46">
+               46. Locations
+            </div>
+            <div class="panel-content" style="display: none;" id="answer_46">
+               Dividing employees by locations.
+            </div>
+         </div>
+         <div class="panel" data-role="panel">
+            <div class="panel-header bg-mauve fg-white" id="question_47">
+               47. Managing employees without sharepoint account
+            </div>
+            <div class="panel-content" style="display: none;" id="answer_47">
+               All reports we would be precised after completion of functional elements of leave request system. We would need to know what data should be available on reports.
+            </div>
+         </div>
+         <div class="panel" data-role="panel">
+         <div class="panel-header bg-mauve fg-white" id="question_48">
+            48. Monthly and yearly leave records
+         </div>
+		 </div>
+         <div class="panel" data-role="panel">
+         <div class="panel-header bg-mauve fg-white" id="question_49">
+            49. My leave requests list summary on main site
+         </div>
+		 </div>
+         <div class="panel" data-role="panel">
+            <div class="panel-header bg-mauve fg-white" id="question_50">
+               50. Personal Employee Information
+            </div>
+            <div class="panel-content" style="display: none;" id="answer_50">
+               It is possible to add and display the following information about an employee: date of birth, joining date, retirement date.
+            </div>
+         </div>
+         <div class="panel" data-role="panel">
+         <div class="panel-header bg-mauve fg-white" id="question_51">
+            51. Planning leaves
+         </div>
+		     </div>
+         <div class="panel" data-role="panel">
+            <div class="panel-header bg-mauve fg-white" id="question_52">
+               52. Printing leave requests and reports
+            </div>
+            <div class="panel-content" style="display: none;" id="answer_52">
+               Print option for leave request.
+            </div>
+         </div>
+         <div class="panel" data-role="panel">
+            <div class="panel-header bg-mauve fg-white" id="question_53">
+               53. Public Holiday Date-Range
+            </div>
+            <div class="panel-content" style="display: none;" id="answer_53">
+               Public holidays can be assigned with a date range.
+            </div>
+         </div>
+         <div class="panel" data-role="panel">
+            <div class="panel-header bg-mauve fg-white" id="question_54">
+               54. Region
+            </div>
+            <div class="panel-content" style="display: none;" id="answer_54">
+               Dividing employees by region.
+            </div>
+         </div>
+         <div class="panel" data-role="panel">
+         <div class="panel-header bg-mauve fg-white" id="question_55">
+            55. Report: Employees on leave.
+         </div>
+		 </div>
+         <div class="panel" data-role="panel">
+         <div class="panel-header bg-mauve fg-white" id="question_56">
+            56. Report: Leave Summary.
+         </div>
+		 </div>
+         <div class="panel" data-role="panel">
+            <div class="panel-header bg-mauve fg-white" id="question_57">
+               57. Reports available for download
+            </div>
+            <div class="panel-content" style="display: none;" id="answer_57">
+               Should be able to download reports in text, csv, excel, pdf for SAP and other ERP. MD only for export to simple files: csv and pdf, for rest we need more info.
+            </div>
+         </div>
+         <div class="panel" data-role="panel">
+            <div class="panel-header bg-mauve fg-white" id="question_58">
+               58. Requesting leaves on behalf of other employees
+            </div>
+            <div class="panel-content" style="display: none;" id="answer_58">
+               Requesting leaves on behalf of other employees by managers, hr members, etc.
+            </div>
+         </div>
+         <div class="panel" data-role="panel">
+            <div class="panel-header bg-mauve fg-white" id="question_59">
+               59. Roles of Assistant
+            </div>
+            <div class="panel-content" style="display: none;" id="answer_59">
+               Assistant can accept/reject leave requests.
+            </div>
+         </div>
+         <div class="panel" data-role="panel">
+            <div class="panel-header bg-mauve fg-white" id="question_60">
+               60. Roles of Global Administrators
+            </div>
+            <div class="panel-content" style="display: none;" id="answer_60">
+               The Global administrator has access to every user. The role of the global administrator is to divide HR managers among Regions/Departments. Administrators add and define whether leave type is custom or unlimited. Leave types are editable.
+            </div>
+         </div>
+         <div class="panel" data-role="panel">
+            <div class="panel-header bg-mauve fg-white" id="question_61">
+               61. Roles of HR Manager
+            </div>
+            <div class="panel-content" style="display: none;" id="answer_61">
+               The HR manager manages the employees that are assigned to their particular department.
+            </div>
+         </div>
+         <div class="panel" data-role="panel">
+            <div class="panel-header bg-mauve fg-white" id="question_62">
+               62. Search
+            </div>
+            <div class="panel-content" style="display: none;" id="answer_62">
+               The ability to search in the employees screen.
+            </div>
+         </div>
+         <div class="panel" data-role="panel">
+            <div class="panel-header bg-mauve fg-white" id="question_63">
+               63. Set the application for different countries
+            </div>
+            <div class="panel-content" style="display: none;" id="answer_63">
+               For example, public holiday per country, local HR contact.
+            </div>
+         </div>
+         <div class="panel" data-role="panel">
+         <div class="panel-header bg-mauve fg-white" id="question_64">
+            64. Specifying an employee’s assistant.
+         </div>
+		 </div>
+         <div class="panel" data-role="panel">
+         <div class="panel-header bg-mauve fg-white" id="question_65">
+            65. User can view their complete leave records anytime.
+         </div>
+		 </div>
+         <div class="panel" data-role="panel">
+         <div class="panel-header bg-mauve fg-white" id="question_66">
+            66. User Privacy
+         </div>
+		 </div>
+         <div class="panel" data-role="panel">
+            <div class="panel-header bg-mauve fg-white" id="question_67">
+               67. User Security
+            </div>
+		</div>
+		<div class="panel" data-role="panel">
+		   <div class="panel-header bg-mauve fg-white" id="question_68">
+			  68. Web based application
+		   </div>
+		   <div class="panel-content" style="display: none;" id="answer_68">
+			  This system would be a Web based application that can be used over the internet.
+		   </div>
+		</div>
+    <div class="panel" data-role="panel">
+       <div class="panel-header bg-mauve fg-white" id="question_69">
+          69. Weekly Calendar
        </div>
-               </section>
-               <section class="call-to-action">
-                 <div style="background: url(img/bgr23.png) top left no-repeat; background-size: cover; height: auto;">
-                     <div class="container" style="padding: 50px 20px">
-                         <div class="grid">
-                             <div class="row">
-                                 <div class="span12" style="background-color: rgba(0, 0, 0, 0.42); padding:5px;">
-                                     <h3 style="padding-top: 50px"><a href="http://office.microsoft.com/en-us/store/timeoff-pro-WA104079126.aspx" class="button bg-emerald">Get the 30-day free trial</a> and start to manage leave requests with ease!</h3>
-                                     <h4 style="height:50px" class="fg-white">You can also check our TimeOFF lite for smaller companies with limited features <a class="button bg-emerald fg-white" href="http://office.microsoft.com/en-us/store/timeoff-lite-WA104022371.aspx">here</a></h4>
-                                     <h4 style="height:50px" class="fg-white">If you don't have test site to checkout this app then sign up for a <a class="button bg-orange fg-white" href="http://office.microsoft.com/en-us/business/office-365-enterprise-e3-business-software-FX103030346.aspx">30-day free Office 365 trial</a> with 25 users seats!</h4>
-                                 </div>
-                             </div>
-                         </div>
-                     </div>
-                 </div>
-               </section>
-               <section>
-                       <div style="height: auto;">
-                           <div class="container" style="padding: 50px 20px">
-                               <div class="grid">
-                                   <div class="row">
-                                       <div class="span12">
-                                         <h2 class="fg-white no-margin" style="text-align: center;">Want to know when the new features will be available?</h2>
-                                         <p class="fg-white with-bottom" style="text-align: center;">Sign up below for updates!</p>
-                                         <div class="sign-up-form">
-                                           <div class="row">
-                                             <div class="span12">
-                                               <div class="input-control text" data-role="input-control">
-                                                 <input type="email" placeholder="your@email.com" required/>
-                                               </div>
-                                             </div>
-                                             <div class="row">
-                                               <div class="span6">
-                                                   <a class="button bg-blue fg-white">Subscribe <i class="icon-arrow-right-3"></i></a>
-                                               </div>
-                                               <div class="span6">
-                                                   <a id="unsubscribe" class="button bg-orange fg-white">Unsubscribe <i class="icon-arrow-right-3"></i></a>
-                                               </div>
-                                             </div>
-                                           </div>
-                                         </div>
-                                       </div>
-                                     </div>
-                                 </div>
-                             </div>
-                         </div>
-               </section>
-               <section>
-                 <div class="fg-white dark" style="height: auto; background-color: rgb(51, 51, 51);">
-                 <div class="container" style="padding: 10px;">
-                    <div class="grid">
-                       <div class="row">
-                          <div class="span12">
-                             <div class="row">
-                                <div class="span4">
-                                   <img src="img/logo-white.svg" class="small-logo"> is brought to you by <a class="button small bg-yellow fg-white" href="http://fild.net">Fild.NET</a>
-                                </div>
-                                <div style="text-align: right;" class="span8">
-                                   If you have any questions <a class="button small bg-green fg-white" href="/faq" style="width: 125px;">Check the FAQ</a> or <a class="button small bg-green last fg-white" href="/contact">Contact us</a>
-                                </div>
-                             </div>
-                          </div>
-                       </div>
-                       <div class="row">
-                          <div class="span12">
-                             <div class="row">
-                                <div class="span4">
-                                   <a class="button bg-blue fg-white" href="http://office.microsoft.com/en-us/store/dashboard.aspx?AssetId=PN104022361" style="">Check our other apps for SharePoint <i class="icon-arrow-right-3"></i></a>
-                                </div>
-                                <div style="text-align: right;" class="span8">
-                                   <a class="button bg-blue fg-white" href="/privacy">Privacy Policy</a>
-                                </div>
-                             </div>
-                          </div>
-                       </div>
-                    </div>
-                 </div>
-                 </div>
-               </section>
+       <div class="panel-content" style="display: none;" id="answer_69">
+          It should be mastered by location and cadre. This location based weekly calendar should specify the working days (5 day week, 5-1/2 day week, 6 day week). The number of Leave Balance credited annually at the beginning of the Leave Year will depend on this.
+       </div>
+    </div>
+  </div>
+          <br/>
+          <br/>
+         <h2>Ideas in progres:</h2>
+         <div class="notices">
+         <div class="panel" data-role="panel">
+            <div class="panel-header bg-mauve fg-white" id="question_70">
+               1. Attach any document into the form.
+            </div>
+            <div class="panel-content" style="display: none;" id="answer_70">For example, the sick leave certificate from doctor.</div>
          </div>
-       </body>
-     </html>
+         <div class="panel" data-role="panel">
+            <div class="panel-header bg-mauve fg-white" id="question_71">
+               2. Attachments
+            </div>
+            <div class="panel-content" style="display: none;" id="answer_71">Possibility to attach files to requests.</div>
+         </div>
+         <div class="panel" data-role="panel">
+            <div class="panel-header bg-mauve fg-white" id="question_72">
+               3. Attributing
+            </div>
+            <div class="panel-content" style="display: none;" id="answer_72">Specific roles (i.e. Admin, HR member, Manager etc.).</div>
+         </div>
+         <div class="panel" data-role="panel">
+            <div class="panel-header bg-mauve fg-white" id="question_73">
+               4. Backup and recovery options
+            </div>
+            <div class="panel-content" style="display: none;" id="answer_73">Possibility to attach files to requests.</div>
+         </div>
+         <div class="panel" data-role="panel">
+            <div class="panel-header bg-mauve fg-white" id="question_74">
+               5. Each employee will be assigned to one Leave Administrator (either by Location or by Cadre)
+            </div>
+            <div class="panel-content" style="display: none;" id="answer_74">A Leave Administrator will be able to view and administer only the employees assigned to him/her.</div>
+         </div>
+         <div class="panel" data-role="panel">
+         <div class="panel-header bg-mauve fg-white" id="question_76">
+            6. Exporting reports to excel files.
+         </div>
+		 </div>
+         <div class="panel" data-role="panel">
+            <div class="panel-header bg-mauve fg-white" id="question_77">
+               7. Handle the leave rules of different companies in different countries
+            </div>
+            <div class="panel-content" style="display: none;" id="answer_77">The system should be designed to handle the leave rules of different companies in different countries. Each company should be able to configure the leave rules to fit their specific company policies.</div>
+         </div>
+         <div class="panel" data-role="panel">
+            <div class="panel-header bg-mauve fg-white" id="question_78">
+               8. Leave balance
+            </div>
+            <div class="panel-content" style="display: none;" id="answer_78">Possibility to exceptionally request days/hours off with no hours left on leave balance.</div>
+         </div>
+         <div class="panel" data-role="panel">
+             <div class="panel-header panel-header-no-icon bg-mauve fg-white" id="question_79">
+                9. Manager sees only subordinates
+             </div>
+		     </div>
+         <div class="panel" data-role="panel">
+           <div class="panel-header panel-header-no-icon bg-mauve fg-white" id="question_80">
+              10. Request leaves for a specific number of hours
+           </div>
+		     </div>
+         <div class="panel" data-role="panel">
+           <div class="panel-header panel-header-no-icon bg-mauve fg-white" id="question_81">
+              11. Search options - Advanced employee search options
+           </div>
+		     </div>
+         <div class="panel" data-role="panel">
+             <div class="panel-header panel-header-no-icon bg-mauve fg-white" id="question_82">
+                12. Setting custom work hours
+             </div>
+    		 </div>
+         <div class="panel" data-role="panel">
+           <div class="panel-header panel-header-no-icon bg-mauve fg-white" id="question_83">
+              13. Software Licensing
+           </div>
+		     </div>
+         <div class="panel" data-role="panel">
+            <div class="panel-header bg-mauve fg-white" id="question_84">
+               14. Attachments
+            </div>
+            <div class="panel-content" style="display: none;" id="answer_84">Possibility to attach files to requests.</div>
+         </div>
+         <div class="panel" data-role="panel">
+            <div class="panel-header panel-header-no-icon bg-mauve fg-white" id="question_85">
+               15. Specifying start time when requesting partial leave of absence (AM or PM)
+            </div>
+			   </div>
+            <div class="panel" data-role="panel">
+               <div class="panel-header bg-mauve fg-white" id="question_85">
+                  16. User Manual
+               </div>
+               <div class="panel-content" style="display: none;" id="answer_85">It should be available in the application.</div>
+            </div>
+         </div>
+         <br/>
+         <br/>
+         <h2>Ideas that are waiting for implementation:</h2>
+         <div class="notices">
+         <div class="panel" data-role="panel">
+            <div class="panel-header bg-mauve fg-white" id="question_86">
+               1. Additional filters for individual reports.
+            </div>
+            <div class="panel-content" style="display: none;" id="answer_86">Additional filters for individual reports.</div>
+         </div>
+         <div class="panel" data-role="panel">
+            <div class="panel-header bg-mauve fg-white" id="question_87">
+               2. All forms view restrictions.
+            </div>
+            <div class="panel-content" style="display: none;" id="answer_87">HR sees employees from his own region (possibility to add additional locations). Managers sees employees they manage.</div>
+         </div>
+         <div class="panel" data-role="panel">
+            <div class="panel-header bg-mauve fg-white" id="question_88">
+               3. Approval Path for cancellation requests.
+            </div>
+            <div class="panel-content" style="display: none;" id="answer_88">Manager->Department Manager approval path for cancellation requests.</div>
+         </div>
+         <div class="panel" data-role="panel">
+            <div class="panel-header bg-mauve fg-white" id="question_89">
+               4. Balances.
+            </div>
+            <div class="panel-content" style="display: none;" id="answer_89">Setup proportionate balances for employees that starts in mid-calendar year.</div>
+         </div>
+         <div class="panel" data-role="panel">
+           <div class="panel-header panel-header-no-icon bg-mauve fg-white" id="question_90">
+              5. Calendar view/Monthly reports filter changes.
+           </div>
+		     </div>
+         <div class="panel" data-role="panel">
+            <div class="panel-header bg-mauve fg-white" id="question_92">
+               6. Company LOGO.
+            </div>
+            <div class="panel-content" style="display: none;" id="answer_92">Ability to upload company logo to personalize the interface.</div>
+         </div>
+         <div class="panel" data-role="panel">
+            <div class="panel-header bg-mauve fg-white" id="question_93">
+               7. Department Manager approval path.
+            </div>
+            <div class="panel-content" style="display: none;" id="answer_93">Adding a department manager role and approval path.</div>
+         </div>
+         <div class="panel" data-role="panel">
+            <div class="panel-header bg-mauve fg-white" id="question_94">
+               8. E-Mail notification of leave approval/rejection to HR.
+            </div>
+            <div class="panel-content" style="display: none;" id="answer_94">HR receives E-Mails of employee leave approval/rejection.</div>
+         </div>
+         <div class="panel" data-role="panel">
+            <div class="panel-header bg-mauve fg-white" id="question_95">
+               9. In app user manuals.
+            </div>
+            <div class="panel-content" style="display: none;" id="answer_95">Manuals available for user, manager, department manager, hr and administrator.</div>
+         </div>
+         <div class="panel" data-role="panel">
+         <div class="panel-header panel-header-no-icon bg-mauve fg-white" id="question_96">
+            10. Key Board Shortcuts
+         </div>
+		 </div>
+         <div class="panel" data-role="panel">
+            <div class="panel-header bg-mauve fg-white" id="question_97">
+               11. Leave Accumulation Rule.
+            </div>
+            <div class="panel-content" style="display: none;" id="answer_97">Leave accumulation rule for employed under and over 50.</div>
+         </div>
+         <div class="panel" data-role="panel">
+            <div class="panel-header bg-mauve fg-white" id="question_98">
+               12. Leave Credit Infrastructure.
+            </div>
+            <div class="panel-content" style="display: none;" id="answer_98">Create a new database table sufficient for the required leave credit rules.</div>
+         </div>
+         <div class="panel" data-role="panel">
+            <div class="panel-header bg-mauve fg-white" id="question_99">
+               13. Leave Credit Rule.
+            </div>
+            <div class="panel-content" style="display: none;" id="answer_99">The yearly leave credit rule for each employee dependant on employee’s workdays.</div>
+         </div>
+         <div class="panel" data-role="panel">
+            <div class="panel-header bg-mauve fg-white" id="question_100">
+               14. Leave Policies
+            </div>
+            <div class="panel-content" style="display: none;" id="answer_100">Ability to have different leave policies for different companies/ countries.</div>
+         </div>
+         <div class="panel" data-role="panel">
+           <div class="panel-header panel-header-no-icon bg-mauve fg-white" id="question_101">
+              15. Leave purpose can be put on leave request form.
+           </div>
+		     </div>
+         <div class="panel" data-role="panel">
+            <div class="panel-header bg-mauve fg-white" id="question_102">
+               16. Leave transactions
+            </div>
+            <div class="panel-content" style="display: none;" id="answer_102">The system should provide full audit trails of leave transaction of each users, approvers and staffs’ leave balances and plans.</div>
+         </div>
+         <div class="panel" data-role="panel">
+            <div class="panel-header bg-mauve fg-white" id="question_103">
+               17. Logging in without a sharepoint account.
+            </div>
+            <div class="panel-content" style="display: none;" id="answer_103">Log in without a sharepoint account.</div>
+         </div>
+         <div class="panel" data-role="panel">
+           <div class="panel-header panel-header-no-icon bg-mauve fg-white" id="question_104">
+              18. LTA Rule.
+           </div>
+		     </div>
+         <div class="panel" data-role="panel">
+            <div class="panel-header panel-header-no-icon bg-mauve fg-white" id="question_105">
+               19. Maternity Leave Extension Rule.
+            </div>
+		     </div>
+    		<div class="panel" data-role="panel">
+    		   <div class="panel-header panel-header-no-icon bg-mauve fg-white" id="question_106">
+    			  20. Maternity Leave Rule.
+    		   </div>
+    		</div>
+    	   <div class="panel" data-role="panel">
+    		  <div class="panel-header panel-header-no-icon bg-mauve fg-white" id="question_107">
+    			 21. Medical Leave Rule
+    		  </div>
+    		</div>
+  		  <div class="panel" data-role="panel">
+  			 <div class="panel-header bg-mauve fg-white" id="question_108">
+  				22. Mobile devices.
+  			 </div>
+  			 <div class="panel-content" style="display: none;" id="answer_108">Leave tracking and approval can be done on mobile devices, especially for iOS and Android.</div>
+  			</div>
+		  <div class="panel" data-role="panel">
+			 <div class="panel-header bg-mauve fg-white" id="question_109">
+				23. Multi-language option.
+			 </div>
+			 <div class="panel-content" style="display: none;" id="answer_109">English, French, German, Spanish, Chinese etc.</div>
+		  </div>
+		  <div class="panel" data-role="panel">
+  			 <div class="panel-header panel-header-no-icon bg-mauve fg-white" id="question_110">
+  				24. My forms full history
+  			 </div>
+		  </div>
+			 <div class="panel" data-role="panel">
+  				<div class="panel-header bg-mauve fg-white" id="question_111">
+  				   25. New Joiner Leave Credit Rule.
+  				</div>
+  				<div class="panel-content" style="display: none;" id="answer_111">Auto calculated leave credit for new employees.</div>
+			 </div>
+			 <div class="panel" data-role="panel">
+				<div class="panel-header panel-header-no-icon bg-mauve fg-white" id="question_112">
+				   26. Outlook calendar integration.
+				</div>
+			 </div>
+			<div class="panel" data-role="panel">
+			   <div class="panel-header bg-mauve fg-white" id="question_113">
+				  27. Pending Cancellation status.
+			   </div>
+			   <div class="panel-content" style="display: none;" id="answer_113">Forms pending cancellation show in ‘forms for approval’ tray.</div>
+			</div>
+			<div class="panel" data-role="panel">
+			   <div class="panel-header bg-mauve fg-white" id="question_114">
+				  28. Report I.
+			   </div>
+			   <div class="panel-content" style="display: none;" id="answer_114">Department wise employee leave transaction.</div>
+			</div>
+			<div class="panel" data-role="panel">
+			   <div class="panel-header bg-mauve fg-white" id="question_115">
+				  29. Report II.
+			   </div>
+			   <div class="panel-content" style="display: none;" id="answer_115">Individual employee leave transaction.</div>
+			</div>
+			<div class="panel" data-role="panel">
+			   <div class="panel-header bg-mauve fg-white" id="question_116">
+				  30. Report III.
+			   </div>
+			   <div class="panel-content" style="display: none;" id="answer_116">Location wise report should be available.</div>
+			</div>
+			<div class="panel" data-role="panel">
+			   <div class="panel-header bg-mauve fg-white" id="question_117">
+				  31. Report IV.
+			   </div>
+			   <div class="panel-content" style="display: none;" id="answer_117">Monthly, Yearly leave record.</div>
+			</div>
+			<div class="panel" data-role="panel">
+			   <div class="panel-header panel-header-no-icon bg-mauve fg-white" id="question_118">
+				  32. Time zone based, location administration option.
+			   </div>
+			</div>
+		   <div class="panel" data-role="panel">
+			  <div class="panel-header panel-header-no-icon bg-mauve fg-white" id="question_119">
+				 33. Upload/Download of Leave Calendar and Leave balance/entitlement.
+			  </div>
+			</div>
+		  <div class="panel" data-role="panel">
+			 <div class="panel-header bg-mauve fg-white" id="question_120">
+				34. Weekly Holiday Calendar.
+			 </div>
+			 <div class="panel-content" style="display: none;" id="answer_120">It should be mastered by state. This location based Holiday calendar should specify the holidays (Saturday and Sunday, Friday and Saturday; full day on Saturday or half day on Saturday etc.). The number of Leave Balance credited annually at the beginning of the Leave Year will depend on this. When the employee looks at the calendar while applying for leave, the system must show clearly the days which are Company Holidays for his/her location and the weekend holidays applicable to his/her cadre at the Location. It would also be nice to show the days on which he/she has already taken leave.</div>
+		  </div>
+		  <div class="panel" data-role="panel">
+			 <div class="panel-header bg-mauve fg-white" id="question_121">
+				35. Mark a user as disabled.
+			 </div>
+			 <div class="panel-content" style="display: none;" id="answer_121">Is it possible to mark a user as disabled, so they don’t appear in any of the lists etc, but all their information is still there</div>
+		  </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+      </section>
+      <section class="call-to-action">
+      <div style="background: url(img/bgr23.png) top left no-repeat; background-size: cover; height: auto;">
+      <div class="container" style="padding: 50px 20px">
+      <div class="grid">
+      <div class="row">
+      <div class="span12" style="background-color: rgba(0, 0, 0, 0.42); padding:5px;">
+      <h3 style="padding-top: 50px"><a href="http://office.microsoft.com/en-us/store/timeoff-pro-WA104079126.aspx" class="button bg-emerald">Get the 30-day free trial</a> and start to manage leave requests with ease!</h3>
+      <h4 style="height:50px" class="fg-white">You can also check our TimeOFF lite for smaller companies with limited features <a class="button bg-emerald fg-white" href="http://office.microsoft.com/en-us/store/timeoff-lite-WA104022371.aspx">here</a></h4>
+      <h4 style="height:50px" class="fg-white">If you don't have test site to checkout this app then sign up for a <a class="button bg-orange fg-white" href="http://office.microsoft.com/en-us/business/office-365-enterprise-e3-business-software-FX103030346.aspx">30-day free Office 365 trial</a> with 25 users seats!</h4>
+      </div>
+      </div>
+      </div>
+      </div>
+      </div>
+      </section>
+      <section>
+      <div style="height: auto;">
+      <div class="container" style="padding: 50px 20px">
+      <div class="grid">
+      <div class="row">
+      <div class="span12">
+      <h2 class="fg-white no-margin" style="text-align: center;">Want to know when the new features will be available?</h2>
+      <p class="fg-white with-bottom" style="text-align: center;">Sign up below for updates!</p>
+      <div class="sign-up-form">
+      <div class="row">
+      <div class="span12">
+      <div class="input-control text" data-role="input-control">
+      <input type="email" placeholder="your@email.com" required/>
+      </div>
+      </div>
+      <div class="row">
+      <div class="span6">
+      <a class="button bg-blue fg-white">Subscribe <i class="icon-arrow-right-3"></i></a>
+      </div>
+      <div class="span6">
+      <a id="unsubscribe" class="button bg-orange fg-white">Unsubscribe <i class="icon-arrow-right-3"></i></a>
+      </div>
+      </div>
+      </div>
+      </div>
+      </div>
+      </div>
+      </div>
+      </div>
+      </div>
+      </section>
+      <section>
+      <div class="fg-white dark" style="height: auto; background-color: rgb(51, 51, 51);">
+      <div class="container" style="padding: 10px;">
+      <div class="grid">
+      <div class="row">
+      <div class="span12">
+      <div class="row">
+      <div class="span4">
+      <img src="img/logo-white.svg" class="small-logo"> is brought to you by <a class="button small bg-yellow fg-white" href="http://fild.net">Fild.NET</a>
+      </div>
+      <div style="text-align: right;" class="span8">
+      If you have any questions <a class="button small bg-green fg-white" href="/faq" style="width: 125px;">Check the FAQ</a> or <a class="button small bg-green last fg-white" href="/contact">Contact us</a>
+      </div>
+      </div>
+      </div>
+      </div>
+      <div class="row">
+      <div class="span12">
+      <div class="row">
+      <div class="span4">
+      <a class="button bg-blue fg-white" href="http://office.microsoft.com/en-us/store/dashboard.aspx?AssetId=PN104022361" style="">Check our other apps for SharePoint <i class="icon-arrow-right-3"></i></a>
+      </div>
+      <div style="text-align: right;" class="span8">
+      <a class="button bg-blue fg-white" href="/privacy">Privacy Policy</a>
+      </div>
+      </div>
+      </div>
+      </div>
+      </div>
+      </div>
+      </div>
+      </section>
+      </div>
+   </body>
+</html>

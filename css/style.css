@@ -547,3 +547,10 @@ li.listview{
   text-decoration:none;
   background-color:#EB3B00 !important;
 }
+
+.metro [data-role=panel] .panel-header-no-icon:after {
+font-family: metroSysIcons !important;
+content: "" !important;
+float: right !important;
+color: inherit !important;
+}
