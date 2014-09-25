@@ -130,7 +130,7 @@ figure.hero{
     display: block !important;
     cursor: default !important;
     min-height: 105px !important;
-    /*opacity: 0 !important;*/
+    opacity: 0 !important;
     transition: opacity 400ms ease !important;
     -webkit-transition: opacity 400ms ease !important;
     -moz-transition: opacity 400ms ease !important;
@@ -418,6 +418,13 @@ li.bg-pinkiDark{
 li.listview{
   opacity:0;
 }
+
+.panel{
+  opacity:0;
+}
+.panel.visible{
+  opacity:1;
+}
 /*Animations
 =========================================================================*/
 .example-animate-container {
@@ -526,6 +533,20 @@ li.listview{
 
 .about-screen-5.visible{
     background-position:left center;
+}
+
+.about-screen-6{
+    background: transparent url(../img/idea.png) no-repeat 0 21618%;
+    background-size:85% auto;
+    transition: 500ms ease;
+    -webkit-transition: 500ms ease;
+    -moz-transition: 500ms ease;
+    -o-transition: 500ms ease;
+    -ms-transition: 500ms ease;
+}
+
+.about-screen-6.visible{
+    background-position:top center;
 }
 
 .bg-blackTrPadd{

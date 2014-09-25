@@ -118,6 +118,16 @@ $(document).ready(function(){
         }
     });
 
+    $('.about-screen-6').waypoint({
+        offset: offset,
+        triggerOnce: true,
+        handler: function(direction) {
+          setTimeout(function(){
+            $('.about-screen-6').addClass('visible');
+          },150);
+        }
+    });
+
     $('.features').waypoint({
         offset: offset,
         triggerOnce: true,
@@ -129,6 +139,21 @@ $(document).ready(function(){
                 setTimeout(function(){
                     el.addClass('visible');
                 }, i * 50);
+            });
+        }
+    });
+
+    $('.notices').waypoint({
+        offset: offset,
+        triggerOnce: true,
+        handler: function(direction) {
+            var i = 0;
+            $('.panel').each(function(){
+                var el = $(this);
+                i++;
+                setTimeout(function(){
+                    el.addClass('visible');
+                }, i * 100);
             });
         }
     });
