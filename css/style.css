@@ -425,6 +425,25 @@ li.listview{
 .panel.visible{
   opacity:1;
 }
+
+/*TabletSlider
+=========================================================================*/
+.tablet{
+  height: 313px;
+  padding-top: 32px;
+  background-image: url("../img/surface.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.tabletCont{
+  width: 87% !important;
+  height: 80% !important;
+  display: block !important;
+  margin: auto auto !important;
+}
+
+
 /*Animations
 =========================================================================*/
 .example-animate-container {
