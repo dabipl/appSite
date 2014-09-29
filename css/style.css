@@ -426,6 +426,13 @@ li.listview{
   opacity:1;
 }
 
+.about p {
+color: #888;
+font-size: 18px;
+line-height: 26px;
+margin: 20px 0px 20px 0px;
+}
+
 /*TabletSlider
 =========================================================================*/
 .tablet{
@@ -441,6 +448,22 @@ li.listview{
   height: 80% !important;
   display: block !important;
   margin: auto auto !important;
+}
+
+.tabletContMed {
+    width: 87% !important;
+    height: 61% !important;
+    display: block !important;
+    margin: auto;
+    margin-top: -8px !important;
+}
+
+.tabletContSmall {
+    width: 87% !important;
+    height: 52.5% !important;
+    display: block !important;
+    margin: auto;
+    margin-top: -13px !important;
 }
 
 
