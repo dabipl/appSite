@@ -153,7 +153,7 @@ $(document).ready(function(){
                 i++;
                 setTimeout(function(){
                     el.addClass('visible');
-                }, i * 100);
+                }, i * 50);
             });
         }
     });
@@ -438,10 +438,14 @@ function validateEmail(email) {
 
 function showAnswerByID(){
 	var id = getParameterByName("id");
-    var answer = "#answer_"+ id;
-	$(answer).addClass("answer visible");
-	$('html, body').animate({
-	scrollTop: $(answer).offset().top - 140}, 1000);
+  if( null === id )
+    top = 0;
+  else{
+    var question = "#question_"+ id;
+    $(question).click();
+    $('html, body').animate({
+    scrollTop: $(question).offset().top - 140}, 1000);
+  }
 }
 
 function getParameterByName(name) {

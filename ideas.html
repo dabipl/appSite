@@ -174,42 +174,45 @@
       </section>
       <section>
           <div style="height: auto;background-color: white; padding: 10px">
-              <div class="container" style="padding: 1px 20px; background-color: ghostwhite;">
+              <div class="container textPad1px20px" ><!--style="padding: 1px 20px;"-->
                   <div class="grid">
                       <div class="row">
                           <div class="span12" style="background-color: ghostwhite;">
-                              <h3 class="left">Use the form below to send us your ideas</h3>
-                              <div class="about">
+                              <h3 class="left textPad1px20px">Use the form below to send us your ideas</h3>
+                              <div class="about textPad1px20px">
                                   <p>If you've a great feature idea that we can add to TimeOFF app please describe it as detailed as you can, so we could improve the TimeOFF.</p>
                               </div>
                               <br>
                               <div class="row">
-                                  <div class="span6">
+                                  <div class="span6 about-screen-6" >
+                                      <img src="img/emptyBigIcons.png"></img>
+                                  </div>
+                                  <div class="span5">
                                     <span class="query-message fg-white bg-orange"></span>
                                     <form action="/api/upload.php" method="post" id="contact-form" enctype="multipart/form-data">
                                         <div class="row">
-                                            <div class="span6">
+                                            <div class="span5">
                                               <div class="input-control text" data-role="input-control">
                                                 <input type="text" id="name" name="name" placeholder="Please give us your name"/>
                                               </div>
                                             </div>
                                          </div>
                                          <div class="row">
-                                             <div class="span6">
+                                             <div class="span5">
                                                <div class="input-control text" data-role="input-control">
                                                  <input type="text" id="email" name="email" placeholder="And email, so we could reply"/>
                                                </div>
                                              </div>
                                           </div>
                                           <div class="row">
-                                              <div class="span6">
+                                              <div class="span5">
                                                 <div class="input-control text" data-role="input-control">
                                                   <input type="text" id="subject" name="subject" placeholder="Then enter a message subject"/>
                                                 </div>
                                               </div>
                                            </div>
                                            <div class="row">
-                                               <div class="span6">
+                                               <div class="span5">
                                                  <div class="input-control select" data-role="input-control">
                                                    <select id="type" name="type">
                                                         <option value="Idea">New idea</option>
@@ -218,7 +221,7 @@
                                                </div>
                                             </div>
                                             <div class="row">
-                                                <div class="span6">
+                                                <div class="span5">
                                                   <div class="input-control textarea">
                                                      <textarea id="message" name="message" rows="5" placeholder="Write your message here"></textarea>
                                                    </div>
@@ -226,11 +229,8 @@
                                              </div>
                                       </form>
                                       <div class="button-set">
-                                          <a id="form-submit" class="button large bg-emerald fg-white">Submit! <i class="icon-arrow-right-3"></i></a>
+                                          <a id="form-submit" class="button large bg-emerald fg-white right">Submit! <i class="icon-arrow-right-3"></i></a>
                                       </div>
-                                  </div>
-                                  <div class="span6 about-screen-6" >
-                                      <img src="img/emptyBigIcons.png"></img>
                                   </div>
                                 </div>
                           </div>
@@ -245,7 +245,7 @@
          <div class="grid">
          <div class="row">
          <div class="span12">
-         <h2 class="left">Customers’ ideas implemented in TimeOFF (in various versions):</h2>
+         <h2 class="center">Customers’ ideas implemented in TimeOFF (in various versions):</h2>
          <br/>
          <div class="notices">
          <div class="panel" data-role="panel">
@@ -367,10 +367,8 @@
             </div>
          </div>
          <div class="panel" data-role="panel">
-            <div class="panel-header bg-mauve fg-white" id="question_20">
+            <div class="panel-header panel-header-no-icon bg-mauve fg-white" id="question_20">
                20. Editing e-email templates
-            </div>
-            <div class="panel-content" style="display: none;" id="answer_20">
             </div>
          </div>
          <div class="panel" data-role="panel">
@@ -458,24 +456,18 @@
             </div>
          </div>
          <div class="panel" data-role="panel">
-            <div class="panel-header bg-mauve fg-white" id="question_32">
+            <div class="panel-header panel-header-no-icon bg-mauve fg-white" id="question_32">
                32. Holiday list on main site
             </div>
-            <div class="panel-content" style="display: none;" id="answer_32">
-            </div>
          </div>
          <div class="panel" data-role="panel">
-            <div class="panel-header bg-mauve fg-white" id="question_33">
+            <div class="panel-header panel-header-no-icon bg-mauve fg-white" id="question_33">
                33. Individual employee leave transaction
             </div>
-            <div class="panel-content" style="display: none;" id="answer_33">
-            </div>
          </div>
          <div class="panel" data-role="panel">
-            <div class="panel-header bg-mauve fg-white" id="question_34">
+            <div class="panel-header panel-header-no-icon bg-mauve fg-white" id="question_34">
                34. Interactive calendar for choosing dates
-            </div>
-            <div class="panel-content" style="display: none;" id="answer_34">
             </div>
          </div>
          <div class="panel" data-role="panel">
@@ -591,12 +583,12 @@
             </div>
          </div>
          <div class="panel" data-role="panel">
-         <div class="panel-header bg-mauve fg-white" id="question_48">
+         <div class="panel-header panel-header-no-icon bg-mauve fg-white" id="question_48">
             48. Monthly and yearly leave records
          </div>
 		 </div>
          <div class="panel" data-role="panel">
-         <div class="panel-header bg-mauve fg-white" id="question_49">
+         <div class="panel-header panel-header-no-icon bg-mauve fg-white" id="question_49">
             49. My leave requests list summary on main site
          </div>
 		 </div>
@@ -609,7 +601,7 @@
             </div>
          </div>
          <div class="panel" data-role="panel">
-         <div class="panel-header bg-mauve fg-white" id="question_51">
+         <div class="panel-header panel-header-no-icon bg-mauve fg-white" id="question_51">
             51. Planning leaves
          </div>
 		     </div>
@@ -638,12 +630,12 @@
             </div>
          </div>
          <div class="panel" data-role="panel">
-         <div class="panel-header bg-mauve fg-white" id="question_55">
+         <div class="panel-header panel-header-no-icon bg-mauve fg-white" id="question_55">
             55. Report: Employees on leave.
          </div>
 		 </div>
          <div class="panel" data-role="panel">
-         <div class="panel-header bg-mauve fg-white" id="question_56">
+         <div class="panel-header panel-header-no-icon bg-mauve fg-white" id="question_56">
             56. Report: Leave Summary.
          </div>
 		 </div>
@@ -704,27 +696,27 @@
             </div>
          </div>
          <div class="panel" data-role="panel">
-         <div class="panel-header bg-mauve fg-white" id="question_64">
+         <div class="panel-header panel-header-no-icon bg-mauve fg-white" id="question_64">
             64. Specifying an employee’s assistant.
          </div>
 		 </div>
          <div class="panel" data-role="panel">
-         <div class="panel-header bg-mauve fg-white" id="question_65">
+         <div class="panel-header panel-header-no-icon bg-mauve fg-white" id="question_65">
             65. User can view their complete leave records anytime.
          </div>
 		 </div>
          <div class="panel" data-role="panel">
-         <div class="panel-header bg-mauve fg-white" id="question_66">
+         <div class="panel-header panel-header-no-icon bg-mauve fg-white" id="question_66">
             66. User Privacy
          </div>
 		 </div>
          <div class="panel" data-role="panel">
-            <div class="panel-header bg-mauve fg-white" id="question_67">
+            <div class="panel-header panel-header-no-icon bg-mauve fg-white" id="question_67">
                67. User Security
             </div>
 		</div>
 		<div class="panel" data-role="panel">
-		   <div class="panel-header bg-mauve fg-white" id="question_68">
+		   <div class="panel-header  bg-mauve fg-white" id="question_68">
 			  68. Web based application
 		   </div>
 		   <div class="panel-content" style="display: none;" id="answer_68">
@@ -742,7 +734,7 @@
   </div>
           <br/>
           <br/>
-         <h2>Ideas in progres:</h2>
+         <h2 class="center">Ideas in progres:</h2>
          <div class="notices">
          <div class="panel" data-role="panel">
             <div class="panel-header bg-mauve fg-white" id="question_70">
@@ -836,7 +828,7 @@
          </div>
          <br/>
          <br/>
-         <h2>Ideas that are waiting for implementation:</h2>
+         <h2 class="center">Ideas that are waiting for implementation:</h2>
          <div class="notices">
          <div class="panel" data-role="panel">
             <div class="panel-header bg-mauve fg-white" id="question_86">
